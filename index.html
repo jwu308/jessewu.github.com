@@ -11,6 +11,10 @@
   			color: #3946FF;
   		}
 
+      a {
+        text-decoration: none;
+      }
+
   		#name {
         display: inline-block;
 
@@ -24,8 +28,6 @@
   		}
 
   		#role {
-
-
   			margin-top: 10px;
 
   			font-size: 18px;
@@ -33,9 +35,7 @@
   		}
 
   		#portfolio-status {
-
-
-  			margin-top: 100px;
+  			margin-top: 50px;
 
   			font-size: 18px;
   		}
@@ -54,6 +54,25 @@
 
   			text-align: center;
   		}
+
+      #links {
+        margin-top: 70px;
+      }
+
+      .dot_separator {
+        display: inline-block;
+
+        margin: 0px 12px 0px 12px; /* top, right, bottom, left */
+
+        height: 4px;
+        width: 4px;
+
+        background-color: #3946FF;
+      }
+
+      img {
+        vertical-align: middle;
+      }
   	</style>
 
     <title>
@@ -63,16 +82,32 @@
   
   <body>
   	<div id="wrapper">
+
   		<div id="name">
   			Jesse Wu
-		</div>
-		<div id="role">
-  			Front-End Developer and UX Designer
-		</div>
-		<div id="portfolio-status">
-			Coming soon.
-		</div>
+		  </div>
 
+  		<div id="role">
+    			Front-End Developer and UX Designer
+  		</div>
+
+  		<div id="portfolio-status">
+  			Coming soon.
+  		</div>
+
+      <div id="links">
+        <a href="https://www.linkedin.com/in/jesse-wu-065820126/" title="LinkedIn" target="_blank">
+          <img src="img/linkedin.svg" onerror="this.src='img/linkedin.png'">
+        </a>
+        <div class = "dot_separator"></div>
+        <a href="document/WuJesse_Resume.pdf" title="Resume" target="_blank">
+          <img src="img/resume.svg" onerror="this.src='img/resume.png'">
+        </a>
+        <div class = "dot_separator"></div>
+        <a href="https://dribbble.com/jessesse" title="Dribbble" target="_blank">
+          <img src="img/dribbble.svg" onerror="this.src='img/dribbble.png'">
+        </a>
+      </div>
   	</div>
   </body>
 
