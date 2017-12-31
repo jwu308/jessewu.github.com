@@ -1,115 +1,438 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
-  	<style>
-  		body {
-  			font-family: Oswald, Arial;
-  			color: #3946FF;
-  		}
+  	     <style>
 
-      a {
-        text-decoration: none;
-      }
+            body {
+                box-sizing: border-box;
 
-  		#name {
-        display: inline-block;
+                font-size: 20px;
+                color: rgb(74, 74, 74);
+                font-family: 'Roboto', sans-serif;
+            }
 
-  			font-size: 36px;
-        font-weight: 300;
+      		#wrapper {
+          		max-width: 670px;
+                margin: 20px auto;
+      		}
 
-        padding: 2px 12px 3px 14px; /* top, right, bottom, left */
+            #header {
+                z-index: 1;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
 
-        color: white;
-        background-color: #3946FF;
-  		}
+                max-width: 670px;
+                height: 32px;
+                margin: 0px auto;
+                padding: 20px 0px 10px 0px;
 
-  		#role {
-  			margin-top: 10px;
+                background: white;
 
-  			font-size: 18px;
-        font-weight: 300;
-  		}
+                text-align: right;
+            }
 
-  		#portfolio-status {
-  			margin-top: 50px;
+            #header span {
+                margin-left: 24px;
+                margin-right: 10px;
+            }
 
-  			font-size: 18px;
-  		}
+            #header span#logo {
+                margin: -12px 0px 10px 10px;
+                font-family: 'Lobster', cursive;
+                font-size: 36px;
+                float: left;
+            }
 
-  		#wrapper {
-  			min-width: 300px;
-  			height: 250px;
+            #hero {
+                margin-top: 120px;
+                text-align: right;
+            }
 
-  			position: absolute;
-  			top: 0;
-  			bottom: 0;
-  			left: 0;
-  			right: 0;
+            #hero img {
+                width: 100%;
+            }
 
-  			margin: auto;
+            #about {
+                margin-top: 200px;
+            }
 
-  			text-align: center;
-  		}
+            #about .section {
+                margin-top: 50px;
+            }
 
-      #links {
-        margin-top: 70px;
-      }
+            #about .section .keyword {
+                font-family: 'Lobster', cursive;
+                font-size: 36px;
+            }
 
-      .dot_separator {
-        display: inline-block;
+            #about .section .description {
+                width: 80%;
+                float: right;
+            }
 
-        margin: 0px 12px 0px 12px; /* top, right, bottom, left */
+            #work {
+                margin-top: 200px;
+            }
 
-        height: 4px;
-        width: 4px;
+            #work .project {
+                position: relative;
+                margin-top: 50px;
+                width: calc(100% - var(--padding) * 2);
+                height: calc(340px - var(--padding) * 2);
+                border-radius: 10px;
+                --padding: 43px;
+                padding: var(--padding);
+            }
 
-        background-color: #3946FF;
-      }
+            #work .project#pizza {
+                background: #FFF7EE;
+            }
 
-      img {
-        vertical-align: middle;
-      }
-  	</style>
+            #work .project#sentiment {
+                background: #FCFFEE;
+            }
 
-    <title>
-      Jesse Wu: Front-End Developer and UX Designer
-    </title>
-  </head>
+            #work .project#money {
+                background: #EEFFF4;
+            }
+
+            #work .project#d3 {
+                background: #EEFDFF;
+            }
+
+            #work .project span {
+                display: inline-block;
+            }
+
+            #work .project .title {
+                width: 288px; /* 288px when above; 250px when below query */
+                font-size: 36px;
+                font-weight: bold;
+            }
+
+            #work .project .subtitle {
+                margin-top: 15px;
+            }
+
+            #work .project .description {
+                position: absolute;
+                bottom: var(--padding);
+                left: var(--padding);
+                width: 288px; /* 288px when above; 250px when below query */
+            }
+
+            #work .project .icon { /* disappear when hit text */
+                position: absolute;
+                bottom: var(--padding);
+                right: var(--padding);
+                width: 253px;
+                height: 253px;
+                border-radius: 20px;
+            }
+
+            #work .project .icon img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+
+            #work .project#pizza .icon#slice {
+                background: #FFE8CE;
+            }
+
+            #work .project#sentiment .icon#smiley {
+                background: #F2FBCA;
+            }
+
+            #work .project#money .icon#cash {
+                background: #CEFFDF;
+            }
+
+            #work .project#d3 .icon#graph {
+                background: #D0F9FF;
+            }
+
+            #work .project#pizza .icon#slice img {
+                margin: -91px 0px 0px -90px; /* 182px height, 180px width */
+            }
+
+            #work .project#sentiment .icon#smiley img {
+                margin: -90px 0px 0px -90px; /* 180x height, 180px width */
+            }
+
+            #work .project#money .icon#cash img {
+                margin: -64px 0px 0px -90px; /* 129px height, 180px width */
+            }
+
+            #work .project#d3 .icon#graph img {
+                margin: -87px 0px 0px -90px; /* 174px height, 180px width */
+            }
+
+
+            #contact {
+                margin-top: 200px;
+            }
+
+            #contact .section {
+                margin-top: 50px;
+            }
+
+            #contact .keyword {
+                font-family: 'Lobster', cursive;
+                font-size: 36px;
+            }
+
+            #contact .description {
+                width: 80%;
+                float: right;
+            }
+
+            #antihero {
+                margin-top: 250px;
+            }
+
+            #antihero img {
+                width: 100%;
+            }
+
+            #footer {
+                margin-top: 100px;
+                text-align: right;
+            }
+
+            #footer span {
+                margin-left: 24px;
+            }
+
+            #footer span#email {
+                margin: 0px;
+                float: left;
+            }
+
+            @media screen and (max-width: 700px) {
+                #work .project .icon {
+                    width: 126px;
+                    height: 126px;
+                }
+
+                #work .project#pizza .icon#slice img {
+                    width: 90px;
+                    height: 91px;
+                    margin: -45px 0px 0px -45px; /* 91px height, 90px width */
+                }
+
+                #work .project#sentiment .icon#smiley img {
+                    width: 90px;
+                    height: 90px;
+                    margin: -45px 0px 0px -45px; /* 90x height, 90px width */
+                }
+
+                #work .project#money .icon#cash img {
+                    width: 90px;
+                    height: 64px;
+                    margin: -32px 0px 0px -45px; /* 64px height, 90px width */
+                }
+
+                #work .project#d3 .icon#graph img {
+                    width: 90px;
+                    height: 86px;
+                    margin: -43px 0px 0px -45px; /* 86px height, 90px width */
+                }
+            }
+
+            @media screen and (max-width: 530px) {
+                #work .project .icon {
+                    display: none;
+                }
+
+                #about .section .keyword {
+                    font-size: 24px;
+                }
+
+                #contact .section .keyword {
+                    font-size: 24px;
+                }
+            }
+
+            @media screen and (max-width: 420px) {
+                #header span {
+                    margin-left: 4px;
+                    margin-right: 10px;
+                }
+
+                #about .section {
+                    padding: 0px 10px;
+                    text-align: center;
+                }
+
+                #about .section .description {
+                    float: none;
+                    display: block;
+                    width: auto;
+                    margin-top: 15px;
+                }
+
+                #work .project {
+                    width: calc(100% - var(--padding_small) * 2);
+                    height: calc(280px - var(--padding_small) * 2);
+
+                    --padding_small: 30px;
+                    padding: var(--padding_small);
+
+                    text-align: center;
+                }
+
+                #work .project .title {
+                    font-size: 24px;
+                    width: 100%;
+                }
+
+                #work .project .description {
+                    bottom: var(--padding_small);
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: calc(100% - var(--padding_small) * 2);
+                }
+
+
+                #contact .section {
+                    padding: 0px 10px;
+                    text-align: center;
+                }
+
+                #contact .section .description {
+                    float: none;
+                    display: block;
+                    width: 100%;
+                    margin-top: 15px;
+                }
+
+                #footer span {
+                    margin-left: 4px;
+                    margin-right: 0px;
+                }
+            }
+
+  	     </style>
+
+        <title>
+            Jesse Wu
+        </title>
+    </head>
   
-  <body>
-  	<div id="wrapper">
+    <body>
+        <div id="wrapper">
 
-  		<div id="name">
-  			Jesse Wu
-		  </div>
+            <div id="header">
+                <a><span id="logo"> JW </span></a>
 
-  		<div id="role">
-    			Front-End Developer and UX Designer
-  		</div>
+                <a><span> Work </span></a>
+                <a><span> About </span></a>
+                <a><span> Contact </span></a>
+            </div>
 
-  		<div id="portfolio-status">
-  			Coming soon.
-  		</div>
+            <div id="hero">
+                <img src="img/Jesse_Wu_Block.svg" />
+                <span><b> Jesse Wu </b></span> 
+                <br>
+                <span> UX Engineer / UX Designer </span>
+            </div>
 
-      <div id="links">
-        <a href="https://www.linkedin.com/in/jesse-wu-065820126/" title="LinkedIn" target="_blank">
-          <img src="img/linkedin.svg" onerror="this.src='img/linkedin.png'">
-        </a>
-        <div class = "dot_separator"></div>
-        <a href="document/WuJesse_Resume.pdf" title="Resume" target="_blank">
-          <img src="img/resume.svg" onerror="this.src='img/resume.png'">
-        </a>
-        <div class = "dot_separator"></div>
-        <a href="https://dribbble.com/jessesse" title="Dribbble" target="_blank">
-          <img src="img/dribbble.svg" onerror="this.src='img/dribbble.png'">
-        </a>
-      </div>
-  	</div>
-  </body>
+            <div id="about">
+                <div class="section">
+                    <span class="keyword"> Hello </span>
+                    <span class="description"> I'm a Master's student studying <b> Computer Science </b> and <b> User Experience </b> at Georgia Tech. </span>
+                </div>
+
+                <div class="section">
+                    <span class="keyword"> Create </span>
+                    <span class="description"> I enjoy the process of understanding users and creating <b> usable and enjoyable experiences. </b> </span>
+                </div>
+
+                <div class="section">
+                    <span class="keyword"> Goal </span>
+                    <span class="description"> I'm currently looking for an <b> internship in Summer 2018 </b> in UX or front-end development.</span>
+                </div>
+            </div>
+
+            <div id="work">
+                <div class="project" id="pizza">
+                    <span class="title"> Let's Order Some Pizza </span>
+                    <br>
+                    <span class="subtitle"> UX Research, Design </span>
+                    <br>
+                    <span class="description"> Improving the experience of buying pizza online. </span>
+                    <div class="icon" id="slice">
+                        <img src="img/slice.svg" />
+                    </div>
+                </div>
+
+                <div class="project" id="sentiment">
+                    <span class="title"> Stocks Have Feelings </span>
+                    <br>
+                    <span class="subtitle"> Front-End Dev, UX Design </span>
+                    <br>
+                    <span class="description"> Determining public sentiment towards company stocks based on social media. </span>
+                    <div class="icon" id="smiley">
+                        <img src="img/smiley.svg" />
+                    </div>
+                </div>
+
+                <div class="project" id="money">
+                    <span class="title"> Where's My Money? </span>
+                    <br>
+                    <span class="subtitle"> UX Research, Design </span>
+                    <br>
+                    <span class="description"> Helping young adults keep track of their spending budget. </span>
+                    <div class="icon" id="cash">
+                        <img src="img/cash.svg" />
+                    </div>
+                </div>
+
+                <div class="project" id="d3">
+                    <span class="title"> Worth a Thousand Words </span>
+                    <br>
+                    <span class="subtitle"> Front-End Dev </span>
+                    <br>
+                    <span class="description"> Visualizing various datasets in order to illuminate trends and answer questions. </span>
+                    <div class="icon" id="graph">
+                        <img src="img/graph.svg" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact">
+                <div class="section">
+                    <span class="keyword"> Talk </span>
+                    <span class="description"> If you would like to talk, feel free to contact me at <b> jwu308@gatech.edu</b>.
+                    <br>
+                    <br>
+                    I'm always interested in talking about <b> work opportunities</b>, school, design trends, and technology. </span>
+                </div>
+            </div>
+
+            <div id="antihero">
+                <img src="img/Thank_You_Block.svg" />
+            </div>
+
+            <div id="footer">
+                <a><span id="email"> <b>Email</b> </span></a>
+
+                <a><span> Resume </span></a>
+                <a><span> LinkedIn </span></a>
+                <a><span> Dribbble </span></a>
+            </div>
+
+        </div>
+    </body>
 
 </html>
 

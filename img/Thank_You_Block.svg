@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="670px" height="377px" viewBox="0 0 670 377" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Thank You Block</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="141.421356%" gradientTransform="translate(0.000000,0.000000),scale(0.541791,1.000000),rotate(28.448438),translate(-0.000000,-0.000000)" id="radialGradient-1">
+            <stop stop-color="#9F93FF" offset="0%"></stop>
+            <stop stop-color="#93F6FF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Home-Copy-7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-390.000000, -3464.000000)">
+        <g id="Thank-You-Block" transform="translate(390.000000, 3430.000000)">
+            <rect id="Rectangle-3" fill="url(#radialGradient-1)" x="0" y="43" width="670" height="363" rx="10"></rect>
+            <text id="Thank-You" transform="translate(345.000000, 182.75) rotate(-10.000000) translate(-332.000000, -227.000000) " font-family="Lobster-Regular, Lobster" font-size="210" font-weight="normal" line-spacing="180" fill="#FFFFFF">
+                <tspan x="49" y="257">Thank </tspan>
+                <tspan x="149.385742" y="437">You</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
