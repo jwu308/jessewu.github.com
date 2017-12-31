@@ -209,6 +209,7 @@
 
             #footer span {
                 margin-left: 24px;
+                margin-right: 10px;
             }
 
             #footer span#email {
@@ -264,7 +265,6 @@
             @media screen and (max-width: 420px) {
                 #header span {
                     margin-left: 4px;
-                    margin-right: 10px;
                 }
 
                 #about .section {
@@ -281,9 +281,9 @@
 
                 #work .project {
                     width: calc(100% - var(--padding_small) * 2);
-                    height: calc(280px - var(--padding_small) * 2);
+                    height: calc(370px - var(--padding_small) * 2);
 
-                    --padding_small: 30px;
+                    --padding_small: 25px;
                     padding: var(--padding_small);
 
                     text-align: center;
@@ -292,6 +292,25 @@
                 #work .project .title {
                     font-size: 24px;
                     width: 100%;
+                }
+
+                #work .project .icon { /* disappear when hit text */
+                    display: block;
+                    position: relative;
+
+                    left: auto;
+                    right: auto;
+                    bottom: auto;
+                    margin: 30px auto;
+
+                    width: 126px;
+                    height: 126px;
+
+                    border-radius: 20px;
+                }
+
+                #work .project .icon img {
+                    
                 }
 
                 #work .project .description {
@@ -317,7 +336,25 @@
 
                 #footer span {
                     margin-left: 4px;
-                    margin-right: 10px;
+                }
+            }
+
+            @media screen and (max-width: 350px) {
+                #work .project {
+                    height: calc(420px - var(--padding_small) * 2);
+                }
+
+                #footer {
+                    text-align: center;
+                }
+
+                #footer span {
+                    display: block;
+                    margin: 10px 0px;
+                }
+
+                #footer span#email {
+                    float: none;
                 }
             }
 
@@ -369,10 +406,10 @@
                     <br>
                     <span class="subtitle"> UX Research, Design </span>
                     <br>
-                    <span class="description"> Improving the experience of buying pizza online. </span>
                     <div class="icon" id="slice">
                         <img src="img/slice.svg" />
                     </div>
+                    <span class="description"> Improving the experience of buying pizza online. </span>
                 </div>
 
                 <div class="project" id="sentiment">
@@ -380,10 +417,10 @@
                     <br>
                     <span class="subtitle"> Front-End Dev, UX Design </span>
                     <br>
-                    <span class="description"> Determining public sentiment towards company stocks based on social media. </span>
                     <div class="icon" id="smiley">
                         <img src="img/smiley.svg" />
                     </div>
+                    <span class="description"> Determining public sentiment towards company stocks based on social media. </span>
                 </div>
 
                 <div class="project" id="money">
@@ -391,10 +428,10 @@
                     <br>
                     <span class="subtitle"> UX Research, Design </span>
                     <br>
-                    <span class="description"> Helping young adults keep track of their spending budget. </span>
                     <div class="icon" id="cash">
                         <img src="img/cash.svg" />
                     </div>
+                    <span class="description"> Helping young adults keep track of their spending budget. </span>
                 </div>
 
                 <div class="project" id="d3">
@@ -402,10 +439,10 @@
                     <br>
                     <span class="subtitle"> Front-End Dev </span>
                     <br>
-                    <span class="description"> Visualizing various datasets in order to illuminate trends and answer questions. </span>
                     <div class="icon" id="graph">
                         <img src="img/graph.svg" />
                     </div>
+                    <span class="description"> Visualizing various datasets in order to illuminate trends and answer questions. </span>
                 </div>
             </div>
 
