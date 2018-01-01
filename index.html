@@ -38,6 +38,16 @@
                 text-align: right;
             }
 
+            #header a {
+                color: rgb(74, 74, 74);
+                text-decoration: none;
+            }
+
+            #header a:hover {
+                font-weight: bold;
+                cursor: pointer;
+            }
+
             #header span {
                 margin-left: 24px;
                 margin-right: 10px;
@@ -51,7 +61,8 @@
             }
 
             #hero {
-                margin-top: 120px;
+                margin-top: 20px;
+                padding-top: 100px;
                 text-align: right;
             }
 
@@ -60,7 +71,8 @@
             }
 
             #about {
-                margin-top: 200px;
+                margin-top: 100px;
+                padding-top: 50px;
             }
 
             #about .section {
@@ -78,7 +90,8 @@
             }
 
             #work {
-                margin-top: 200px;
+                margin-top: 100px;
+                padding-top: 50px;
             }
 
             #work .project {
@@ -175,9 +188,9 @@
                 margin: -87px 0px 0px -90px; /* 174px height, 180px width */
             }
 
-
             #contact {
-                margin-top: 200px;
+                margin-top: 100px;
+                padding-top: 50px;
             }
 
             #contact .section {
@@ -249,27 +262,12 @@
             }
 
             @media screen and (max-width: 530px) {
-                #work .project .icon {
-                    display: none;
-                }
-
-                #about .section .keyword {
-                    font-size: 24px;
-                }
-
-                #contact .section .keyword {
-                    font-size: 24px;
-                }
-            }
-
-            @media screen and (max-width: 420px) {
                 #header span {
                     margin-left: 4px;
                 }
 
-                #about .section {
-                    padding: 0px 10px;
-                    text-align: center;
+                #about .section .keyword {
+                    font-size: 24px;
                 }
 
                 #about .section .description {
@@ -277,6 +275,11 @@
                     display: block;
                     width: auto;
                     margin-top: 15px;
+                }
+
+                #about .section {
+                    padding: 0px 10px;
+                    text-align: center;
                 }
 
                 #work .project {
@@ -294,8 +297,7 @@
                     width: 100%;
                 }
 
-                #work .project .icon { /* disappear when hit text */
-                    display: block;
+                #work .project .icon { 
                     position: relative;
 
                     left: auto;
@@ -321,10 +323,13 @@
                     width: calc(100% - var(--padding_small) * 2);
                 }
 
-
                 #contact .section {
                     padding: 0px 10px;
                     text-align: center;
+                }
+
+                #contact .section .keyword {
+                    font-size: 24px;
                 }
 
                 #contact .section .description {
@@ -369,11 +374,11 @@
         <div id="wrapper">
 
             <div id="header">
-                <a><span id="logo"> JW </span></a>
+                <a href="#hero"><span id="logo"> JW </span></a>
 
-                <a><span> Work </span></a>
-                <a><span> About </span></a>
-                <a><span> Contact </span></a>
+                <a href="#work"><span> Work </span></a>
+                <a href="#about"><span> About </span></a>
+                <a href="#contact"><span> Contact </span></a>
             </div>
 
             <div id="hero">
