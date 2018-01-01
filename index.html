@@ -28,7 +28,7 @@
                 left: 0;
                 right: 0;
 
-                max-width: 670px;
+                max-width: 672px;
                 height: 32px;
                 margin: 0px auto;
                 padding: 20px 0px 10px 0px;
@@ -374,11 +374,11 @@
         <div id="wrapper">
 
             <div id="header">
-                <a href="#hero"><span id="logo"> JW </span></a>
+                <a href="#hero" ontouchend="this.onclick=fix"><span id="logo"> JW </span></a>
 
-                <a href="#work"><span> Work </span></a>
-                <a href="#about"><span> About </span></a>
-                <a href="#contact"><span> Contact </span></a>
+                <a href="#work" ontouchend="this.onclick=fix" ><span> Work </span></a>
+                <a href="#about" ontouchend="this.onclick=fix"><span> About </span></a>
+                <a href="#contact" ontouchend="this.onclick=fix"><span> Contact </span></a>
             </div>
 
             <div id="hero">
@@ -475,6 +475,17 @@
 
         </div>
     </body>
+
+    <script>
+        function fix()
+        {
+            var el = this;
+            var par = el.parentNode;
+            var next = el.nextSibling;
+            par.removeChild(el);
+            setTimeout(function() {par.insertBefore(el, next);}, 0)
+        }
+    </script>
 
 </html>
 
