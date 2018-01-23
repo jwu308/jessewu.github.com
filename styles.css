@@ -228,6 +228,11 @@ body {
     float: right;
 }
 
+#contact a {
+    color: rgb(74, 74, 74);
+    text-decoration: none;
+}
+
 #antihero {
     margin-top: 250px;
     text-align: right;
