@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        
+        <title>
+            Jesse Wu
+        </title>
+    </head>
+  
+    <body>
+        <div id="wrapper">
+
+            <div id="header">
+                <a href="../index.html#hero" ontouchend="this.onclick=hover_fix"><span id="logo"> JW </span></a>
+
+                <a href="../index.html#work" ontouchend="this.onclick=hover_fix" ><span> Work </span></a>
+                <a href="../index.html#about" ontouchend="this.onclick=hover_fix"><span> About </span></a>
+                <a href="../index.html#contact" ontouchend="this.onclick=hover_fix"><span> Contact </span></a>
+            </div>
+
+            <div class="case_study">
+                <div class="hero" id="pizza">
+                    <div class="icon" id="slice">
+                        <img src="../img/slice.svg" />
+                    </div>
+                </div>
+
+                <span class="title">Let's Order Some Pizza</span>
+                <br>
+                <span class="subtitle">Improving the experience of ordering pizza</span>
+                <br>
+                <span class='heading'>Problem</span>
+                <span class='body'>Pizza is one of the most popular foods in Western culture. Thousands of people order pizza every day.
+                <br><br>
+                While many pizza services have recently updated their app and web interfaces to increase usability and promote sales, there still exists many lingering usability issues and thus opportunities to further improve upon the user experience of ordering pizza.</span>
+                <br>
+                <span class='heading'>Research</span>
+                <span class='body'>To learn more about the usability issues that users tend to face when ordering pizza online, several people who frequently ordered pizza were interviewed. 
+                <br><br>
+                In addition, several existing pizza-delivery apps were analyzed in order to take a closer look at their current user experiences. These apps included: Slice, Papa Johns, Pizza Hut, and Dominoes.
+                <br><br>
+                After analyzing for common themes the research findings, it was gathered that a positive, intuitive pizza-ordering experience typically included:
+                <br><br>
+                <ul>
+                    <li>Pictures of food</li>
+                    <li>Minimal visual clutter</li>
+                    <li>Guided interaction flow with few steps</li>
+                    <li>Delivery status tracking</li>
+                </ul></span>
+                <span class='heading'>Early Design</span>
+                <span class='body'>The process of ordering of a pizza was broken down into 3 tasks: selecting the pizza, checking out, and monitoring the delivery status. 
+                <br><br>
+                When selecting pizza, each ingredient was accompanied by a vivid image. Moreover, the pizza customization screens feature a dynamic preview image of the pizza's current state. 
+                <br><br>
+                After selecting the pizza and checking out, the delivery screen conveys the status of the pizza, such as being prepared, out for delivery, or delivered, and the estimated time until delivery.
+                <img id="sketch" onclick="summon(this.id)" src="../img/Pizza/Sketch.png" />
+                <img id="blockframe" onclick="summon(this.id)" src="../img/Pizza/Blockframe.png" />
+                <img id="wireframe" onclick="summon(this.id)" src="../img/Pizza/Wireframe.png" /></span>
+                <span class='heading'>User Testing</span>
+                <span class='body'>After the early design mock ups were created, user testing was conducted to collect feedback from users. A low-fidelity prototype was created from the early design mock ups using Invision, and users were asked to perform a benchmark task. 
+                <br><br>
+                For the task, users were split into two groups; one group participated in a think-aloud activity, while the other group performed the activity silently on their own. ared, out for delivery, or delivered, and the estimated time until delivery.
+                <br><br>
+                Analysis of user feedback and observations revealed:
+                <br><br>
+                <ul>
+                    <li>Pictures of ingredients allowed users to quickly identify ingredients</li>
+                    <li>Dynamic pizza helped users to remember selected toppings</li>
+                    <li>Half-pie ingredient buttons were located too closely together</li>
+                    <li>Inability to skip customization slowed down the ordering process</li>
+                </ul></span>
+                <span class='heading'>Iterated Design</span>
+                <span class='body'>The design iteration aimed to establish a visual language for interactivity, allow for more freedom by skipping through customization, and update customization buttons to become more accessible.
+                <img id="iterated" onclick="summon(this.id)" src="../img/Pizza/Iterated.png" />
+                <br><br>
+                For future design iterations, there would be a focus on addressing other common themes in the user testing feedback, such as:
+                <br><br>
+                <ul>
+                    <li>Navigation flexibility to skip forwards or backwards in the ordering process</li>
+                    <li>Increased use of color to improve usability and enjoyment</li>
+                    <li>Exploration of in-depth delivery tracking with GPS or live-streaming</li>
+                </ul></span>
+            </div>
+
+            <div id="project_nav">
+                <a href="sentiment.html">
+                    <span class="next">Next
+                        <br>
+                        <span class="title">Stocks Have Feelings</span>
+                    </span>
+                </a>
+            </div>
+
+            <div id="footer">
+                <a href="mailto:jwu308@gatech.edu"><span id="email"> <b>Email</b> </span></a>
+
+                <a href="../document/WuJesse_Resume.pdf"><span> Resume </span></a>
+                <a href="https://www.linkedin.com/in/jesse-wu-065820126/"><span> LinkedIn </span></a>
+                <a href="https://dribbble.com/jessesse"><span> Dribbble </span></a>
+
+                <span id="credits"> Website by Jesse Wu </span>
+            </div>
+        </div>
+        <div class="overlay" id="sketch" onclick="disappear(this.id)">
+            <img src="../img/Pizza/Sketch.png" />
+        </div>
+        <div class="overlay" id="blockframe" onclick="disappear(this.id)">
+             <img src="../img/Pizza/Blockframe.png" />
+        </div>
+        <div class="overlay" id="wireframe" onclick="disappear(this.id)">
+             <img src="../img/Pizza/Wireframe.png" />
+        </div>
+        <div class="overlay" id="iterated" onclick="disappear(this.id)">
+             <img src="../img/Pizza/Iterated.png" />
+        </div>
+    </body>
+
+    <script>
+        function hover_fix()
+        {
+            var el = this;
+            var par = el.parentNode;
+            var next = el.nextSibling;
+            par.removeChild(el);
+            setTimeout(function() {par.insertBefore(el, next);}, 0)
+        }
+
+        // function disappear(id)
+        // {
+        //     document.querySelector(".overlay" + "#" + id).style.display = "none";
+        //     document.querySelector("body").style.overflow = "auto";
+        //     document.querySelector(".case_study .body img ").style.cursor = "zoom-in";
+        // }
+
+        // function summon(id)
+        // {
+        //     document.querySelector(".overlay" + "#" + id).style.display = "block";
+        //     document.querySelector("body").style.overflow = "hidden";
+        //     document.querySelector(".case_study .body img ").style.cursor = "zoom-out";
+        // }
+    </script>
+
+</html>

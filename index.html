@@ -5,408 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-
-  	     <style>
-
-            body {
-                box-sizing: border-box;
-
-                font-size: 20px;
-                color: rgb(74, 74, 74);
-                font-family: 'Roboto', sans-serif;
-            }
-
-      		#wrapper {
-          		max-width: 670px;
-                margin: 20px auto;
-      		}
-
-            #header {
-                z-index: 1;
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-
-                max-width: 672px;
-                height: 32px;
-                margin: 0px auto;
-                padding: 20px 0px 10px 0px;
-
-                background: white;
-
-                text-align: right;
-            }
-
-            #header a {
-                color: rgb(74, 74, 74);
-                text-decoration: none;
-            }
-
-            #header a:hover {
-                font-weight: bold;
-                cursor: pointer;
-            }
-
-            #header span {
-                margin-left: 24px;
-                margin-right: 10px;
-            }
-
-            #header span#logo {
-                margin: -12px 0px 10px 10px;
-                font-family: 'Lobster', cursive;
-                font-size: 36px;
-                float: left;
-            }
-
-            #hero {
-                margin-top: 20px;
-                padding-top: 100px;
-                text-align: right;
-            }
-
-            #hero img {
-                width: 100%;
-            }
-
-            #about {
-                margin-top: 100px;
-                padding-top: 50px;
-            }
-
-            #about .section {
-                margin-top: 50px;
-            }
-
-            #about .section .keyword {
-                font-family: 'Lobster', cursive;
-                font-size: 36px;
-            }
-
-            #about .section .description {
-                width: 80%;
-                float: right;
-            }
-
-            #work {
-                margin-top: 100px;
-                padding-top: 50px;
-            }
-
-            #work .project {
-                position: relative;
-
-                margin-top: 50px;
-
-                width: calc(100% - var(--padding) * 2);
-                height: calc(340px - var(--padding) * 2);
-
-                border-radius: 10px;
-
-                --padding: 43px;
-                padding: var(--padding);
-
-                transition: 0.25s;
-            }
-
-            #work .project:hover {
-                cursor: pointer;
-            }
-
-            #work .project#pizza {
-                background: #FFF7EE;
-            }
-
-            #work .project#pizza:hover {
-                background: #FFF0E0;
-            }
-
-            #work .project#sentiment {
-                background: #FCFFEE;
-            }
-
-            #work .project#sentiment:hover {
-                background: #F8FFD9;
-            }
-
-            #work .project#money {
-                background: #EEFFF4;
-            }
-
-            #work .project#money:hover {
-                background: #E2FFEE;
-            }
-
-            #work .project#d3 {
-                background: #EEFDFF;
-            }
-
-            #work .project#d3:hover {
-                background: #E3FCFF;
-            }
-
-            #work .project span {
-                display: inline-block;
-            }
-
-            #work .project .title {
-                width: 288px; /* 288px when above; 250px when below query */
-                font-size: 36px;
-                font-weight: bold;
-            }
-
-            #work .project .subtitle {
-                margin-top: 15px;
-            }
-
-            #work .project .description {
-                position: absolute;
-                bottom: var(--padding);
-                left: var(--padding);
-                width: 288px; /* 288px when above; 250px when below query */
-            }
-
-            #work .project .icon { /* disappear when hit text */
-                position: absolute;
-                bottom: var(--padding);
-                right: var(--padding);
-                width: 253px;
-                height: 253px;
-                border-radius: 20px;
-            }
-
-            #work .project .icon img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-            }
-
-            #work .project#pizza .icon#slice {
-                background: #FFE8CE;
-            }
-
-            #work .project#sentiment .icon#smiley {
-                background: #F2FBCA;
-            }
-
-            #work .project#money .icon#cash {
-                background: #CEFFDF;
-            }
-
-            #work .project#d3 .icon#graph {
-                background: #D0F9FF;
-            }
-
-            #work .project#pizza .icon#slice img {
-                margin: -91px 0px 0px -90px; /* 182px height, 180px width */
-            }
-
-            #work .project#sentiment .icon#smiley img {
-                margin: -90px 0px 0px -90px; /* 180x height, 180px width */
-            }
-
-            #work .project#money .icon#cash img {
-                margin: -64px 0px 0px -90px; /* 129px height, 180px width */
-            }
-
-            #work .project#d3 .icon#graph img {
-                margin: -87px 0px 0px -90px; /* 174px height, 180px width */
-            }
-
-            #contact {
-                margin-top: 100px;
-                padding-top: 50px;
-            }
-
-            #contact .section {
-                margin-top: 50px;
-            }
-
-            #contact .keyword {
-                font-family: 'Lobster', cursive;
-                font-size: 36px;
-            }
-
-            #contact .description {
-                width: 80%;
-                float: right;
-            }
-
-            #antihero {
-                margin-top: 250px;
-                text-align: right;
-            }
-
-            #antihero img {
-                width: 100%;
-            }
-
-            #footer {
-                margin-top: 100px;
-                text-align: right;
-            }
-
-            #footer a {
-                color: rgb(74, 74, 74);
-                text-decoration: none;
-            }
-
-            #footer a:hover {
-                font-weight: bold;
-                cursor: pointer;
-            }
-
-            #footer span {
-                margin-left: 24px;
-                margin-right: 5px;
-            }
-
-            #footer span#email {
-                margin: 0px 0px 0px 2px;
-                float: left;
-            }
-
-            #footer span#credits {
-                display: block;
-                margin: 50px 0px 0px 2px;
-                /*text-align: left;*/
-            }
-
-            @media screen and (max-width: 700px) {
-                #work .project .icon {
-                    width: 126px;
-                    height: 126px;
-                }
-
-                #work .project#pizza .icon#slice img {
-                    width: 90px;
-                    height: 91px;
-                    margin: -45px 0px 0px -45px; /* 91px height, 90px width */
-                }
-
-                #work .project#sentiment .icon#smiley img {
-                    width: 90px;
-                    height: 90px;
-                    margin: -45px 0px 0px -45px; /* 90x height, 90px width */
-                }
-
-                #work .project#money .icon#cash img {
-                    width: 90px;
-                    height: 64px;
-                    margin: -32px 0px 0px -45px; /* 64px height, 90px width */
-                }
-
-                #work .project#d3 .icon#graph img {
-                    width: 90px;
-                    height: 86px;
-                    margin: -43px 0px 0px -45px; /* 86px height, 90px width */
-                }
-            }
-
-            @media screen and (max-width: 530px) {
-                #header span {
-                    margin-left: 4px;
-                }
-
-                #about .section .keyword {
-                    font-size: 24px;
-                }
-
-                #about .section .description {
-                    float: none;
-                    display: block;
-                    width: auto;
-                    margin-top: 15px;
-                }
-
-                #about .section {
-                    padding: 0px 10px;
-                    text-align: center;
-                }
-
-                #work .project {
-                    width: calc(100% - var(--padding_small) * 2);
-                    height: calc(370px - var(--padding_small) * 2);
-
-                    --padding_small: 25px;
-                    padding: var(--padding_small);
-
-                    text-align: center;
-                }
-
-                #work .project .title {
-                    font-size: 24px;
-                    width: 100%;
-                }
-
-                #work .project .icon { 
-                    position: relative;
-
-                    left: auto;
-                    right: auto;
-                    bottom: auto;
-                    margin: 30px auto;
-
-                    width: 126px;
-                    height: 126px;
-
-                    border-radius: 20px;
-                }
-
-                #work .project .icon img {
-                    
-                }
-
-                #work .project .description {
-                    bottom: var(--padding_small);
-                    left: 0;
-                    right: 0;
-                    margin: 0 auto;
-                    width: calc(100% - var(--padding_small) * 2);
-                }
-
-                #contact .section {
-                    padding: 0px 10px;
-                    text-align: center;
-                }
-
-                #contact .section .keyword {
-                    font-size: 24px;
-                }
-
-                #contact .section .description {
-                    float: none;
-                    display: block;
-                    width: 100%;
-                    margin-top: 15px;
-                }
-
-                #footer span {
-                    margin-left: 4px;
-                }
-            }
-
-            @media screen and (max-width: 350px) {
-                #work .project {
-                    height: calc(420px - var(--padding_small) * 2);
-                }
-
-                #footer {
-                    text-align: center;
-                }
-
-                #footer span {
-                    display: block;
-                    margin: 10px 0px;
-                }
-
-                #footer span#email {
-                    float: none;
-                }
-            }
-
-  	     </style>
+        <link rel="stylesheet" href="styles.css">
 
         <title>
             Jesse Wu
@@ -449,49 +48,58 @@
             </div>
 
             <div id="work">
-                <div class="project" id="pizza">
-                    <span class="title"> Let's Order Some Pizza </span>
-                    <br>
-                    <span class="subtitle"> UX Research, Design </span>
-                    <br>
-                    <div class="icon" id="slice">
-                        <img src="img/slice.svg" />
-                    </div>
-                    <span class="description"> Improving the experience of buying pizza online. </span>
-                </div>
 
-                <div class="project" id="sentiment">
-                    <span class="title"> Stocks Have Feelings </span>
-                    <br>
-                    <span class="subtitle"> Front-End Dev, UX Design </span>
-                    <br>
-                    <div class="icon" id="smiley">
-                        <img src="img/smiley.svg" />
+                <a href="work/pizza.html">
+                    <div class="project" id="pizza">
+                        <span class="title"> Let's Order Some Pizza </span>
+                        <br>
+                        <span class="subtitle"> UX Research, UX Design </span>
+                        <br>
+                        <div class="icon" id="slice">
+                            <img src="img/slice.svg" />
+                        </div>
+                        <span class="description"> Improving the experience of buying pizza online. </span>
                     </div>
-                    <span class="description"> Determining public sentiment towards company stocks based on social media. </span>
-                </div>
+                </a>
 
-                <div class="project" id="money">
-                    <span class="title"> Where's My Money? </span>
-                    <br>
-                    <span class="subtitle"> UX Research, Design </span>
-                    <br>
-                    <div class="icon" id="cash">
-                        <img src="img/cash.svg" />
+                <a href="work/sentiment.html">
+                    <div class="project" id="sentiment">
+                        <span class="title"> Stocks Have Feelings </span>
+                        <br>
+                        <span class="subtitle"> UX Design, Prototyping </span>
+                        <br>
+                        <div class="icon" id="smiley">
+                            <img src="img/smiley.svg" />
+                        </div>
+                        <span class="description"> Determining public sentiment towards company stocks based on social media. </span>
                     </div>
-                    <span class="description"> Helping young adults keep track of their spending budget. </span>
-                </div>
+                </a>
 
-                <div class="project" id="d3">
-                    <span class="title"> Worth a Thousand Words </span>
-                    <br>
-                    <span class="subtitle"> Front-End Dev </span>
-                    <br>
-                    <div class="icon" id="graph">
-                        <img src="img/graph.svg" />
+                <a href="work/money.html">
+                    <div class="project" id="money">
+                        <span class="title"> Where's My Money? </span>
+                        <br>
+                        <span class="subtitle"> UX Research, UX Design </span>
+                        <br>
+                        <div class="icon" id="cash">
+                            <img src="img/cash.svg" />
+                        </div>
+                        <span class="description"> Helping young adults keep track of their spending budget. </span>
                     </div>
-                    <span class="description"> Visualizing various datasets in order to illuminate trends and answer questions. </span>
-                </div>
+                </a>
+
+                <a href="work/d3.html">
+                    <div class="project" id="d3">
+                        <span class="title"> Cooking Up Something Good </span>
+                        <br>
+                        <span class="subtitle"> UI Design, Visual Design </span>
+                        <br>
+                        <div class="icon" id="graph">
+                            <img src="img/flask.svg" />
+                        </div>
+                        <span class="description"> Experimenting with various design styles for miscellaneous interfaces. </span>
+                    </div>
+                </a>
             </div>
 
             <div id="contact">
@@ -517,9 +125,6 @@
 
                 <span id="credits"> Website by Jesse Wu </span>
             </div>
-
-            <!-- <img style="width: 100%" src="document/Pizza/Wireframes.pdf" />
-            <img style="width: 100%" src="document/Pizza/Mockups.pdf" /> -->
         </div>
     </body>
 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        
+        <title>
+            Jesse Wu
+        </title>
+    </head>
+  
+    <body>
+        <div id="wrapper">
+
+            <div id="header">
+                <a href="../index.html#hero" ontouchend="this.onclick=hover_fix"><span id="logo"> JW </span></a>
+
+                <a href="../index.html#work" ontouchend="this.onclick=hover_fix" ><span> Work </span></a>
+                <a href="../index.html#about" ontouchend="this.onclick=hover_fix"><span> About </span></a>
+                <a href="../index.html#contact" ontouchend="this.onclick=hover_fix"><span> Contact </span></a>
+            </div>
+
+            <div class="case_study">
+                <div class="hero" id="sentiment">
+                    <div class="icon" id="smiley">
+                        <img src="../img/smiley.svg" />
+                    </div>
+                </div>
+
+                <span class="title">Stocks Have Feelings</span>
+                <br>
+                <span class="subtitle">Conveying public sentiment towards company stocks based on social media</span>
+                <br>
+                <span class='heading'>Problem</span>
+                <span class='body'>Stock trading can seem very daunting. When first starting out, new users may feel overwhelmed by the number of graphs, charts, and reports filled with financial jargon. In addition, the countless concepts for predicting the stock market may go over a beginner's head.
+                <br><br>
+                This project attempts to address issues of usability and comprehension with regards to what affects stocks. More specifically, how can beginner traders better understand the forces that move stock prices?</span>
+                <br>
+                <span class='heading'>Research</span>
+                <span class='body'>Many forces move stock prices: fundamental factors, technical factors, and market sentiment, for example. However, interviews with expert traders revealed that the first two factors typically requires some extensive background knowledge to fully understand.
+                <br><br>
+                On the other hand, user surveys revealed that the concept of market sentiment generally made sense to people. Several users mentioned that the concept felt intuitive; if many people support a company, it's likely that it's stock price would rise as well.</span>
+                <br><br>
+                Based on the research findings, the project goal became to create an intuitive tool that presents market sentiment data in a usable and pleasing manner. It was important for the tool to feel simple in contrast to existing trading tools whose sentiment ratings are typically hidden away in dense, complex charts. 
+                <br>
+                <span class='heading'>Early Design</span>
+                <span class='body'>The early design focused on creating a minimum viable product for conveying market sentiment. The process of learning about market sentiment was split into two main user tasks: searching for a stock and then understanding its sentiment rating. 
+                <br><br>
+                <span id="rating_explanation" onclick="explain_rating()""><i>Click to learn more about the rationale behind the sentiment rating system.</i></span>
+                <img src="../img/Sentiment/Sketch.jpg" />
+                <img src="../img/Sentiment/Early_Wireframe.png" />
+                <img src="../img/Sentiment/Early_Mockup.png" /></span>
+                <span class='heading'>User Testing</span>
+                <span class='body'>For testing the early design, both beginner and advanced stock traders were asked to perform a benchmark task of finding sentiment ratings for various stocks. The testing took place on an Invision-based prototype.
+                <br><br>
+                The beginner traders mentioned that the interface felt easy to use. However, when asked to find sentiment ratings for unfamiliar companies, they struggled to come up with or discover new companies on the fly. They mentioned that the minimal search bar interface felt too open-ended and that they would like more guidance in terms of possible stock to search on.
+                <br><br>
+                The advanced traders mentioned that showing a stock's individual sentiment rating was nice, but that it could be much useful if it were compared alongside other stocks' sentiment ratings. With a relative point of comparison to other stocks, more insight could be gathered to make educated decisions.</span>
+                <br>
+                <span class='heading'>Iterated Design</span>
+                <span class='body'>In the iterated design, several features were added: ability to browse stocks by industry, compare two or more stock's sentiment, and show relevant news articles that supported the sentiment rating.
+                <br><br>
+                Categorizing stocks by industry allowed for more browsing and discovery rather than only looking-up stocks with the intent of encouraging exploration for beginner traders. 
+                <br><br>
+                Moreover, the intention behind including relevant news articles was to enable interested traders to investigate the source material and make their own judgements.
+                <img src="../img/Sentiment/Iterated_Wireframe.png" />
+                <img src="../img/Sentiment/Iterated_Mockup.png" /></span>
+                <br>
+                <span class='heading'>Front-End Prototype</span>
+                <span class='body'>For rapid prototyping, a basic front-end web prototype was coded using HTML, CSS, and Javascript. When the user searched for a stock, the New York Times API was called and output several news articles about the stock. These news articles were then fed into the Watson sentiment API to calculate an average sentiment rating.
+                <br><br>
+                For future iterations, it would be of value to look into refactoring in Angular or React for better extendability and code management over time. Also, experimenting with the Twitter API to perform sentiment analysis on stock-related tweets may provide interesting results.</span>
+            </div>
+
+            <div id="project_nav">
+                <a href="money.html">
+                    <span class="next">Next
+                        <br>
+                        <span class="title">Where's My Money?</span>
+                    </span>
+                </a>
+                <a href="pizza.html">
+                    <span class="previous">Previous
+                        <br>
+                        <span class="title">Let's Order Some Pizza</span>
+                    </span>
+                </a>
+            </div>
+
+            <div id="footer">
+                <a href="mailto:jwu308@gatech.edu"><span id="email"> <b>Email</b> </span></a>
+
+                <a href="../document/WuJesse_Resume.pdf"><span> Resume </span></a>
+                <a href="https://www.linkedin.com/in/jesse-wu-065820126/"><span> LinkedIn </span></a>
+                <a href="https://dribbble.com/jessesse"><span> Dribbble </span></a>
+
+                <span id="credits"> Website by Jesse Wu </span>
+            </div>
+        </div>
+
+        <div class="overlay" id="sketch" onclick="disappear(this.id)">
+            <img src="../img/Sentiment/Sketch.png" />
+        </div>
+        <div class="overlay" id="wireframe" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Wireframe.png" />
+        </div>
+        <div class="overlay" id="mockup" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Iterated.png" />
+        </div>
+    </body>
+
+    <script>
+        function hover_fix()
+        {
+            var el = this;
+            var par = el.parentNode;
+            var next = el.nextSibling;
+            par.removeChild(el);
+            setTimeout(function() {par.insertBefore(el, next);}, 0)
+        }
+
+        function explain_rating()
+        {
+            document.getElementById("rating_explanation").innerHTML = "The sentiment rating system ranged from -1 to 1, where -1 represents the most negative sentiment, 0 represents neutral sentiment, and 1 represents the most positive sentiment. This scale was chosen over a tradition 0 to 10 or 0 to 100 scale due to its ability to convey more intuitive sentiment scores. <br><br> In a 0 to 100 scale, high scores are good and low score (typically perceived as below 70) are bad. Under this system, a score of 50 or 50% implies a poor score. However, for sentiment rating, a 50 would actually mean totally neutral; people have no strong feelings in this case. As a result, the -1 to 1 range was chosen to minimize misconceptions and convey the sense that 0 represents an origin point that aligns with neutrality.";
+        }
+    </script>
+
+</html>

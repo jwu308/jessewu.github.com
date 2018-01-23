@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        
+        <title>
+            Jesse Wu
+        </title>
+    </head>
+  
+    <body>
+        <div id="wrapper">
+
+            <div id="header">
+                <a href="../index.html#hero" ontouchend="this.onclick=hover_fix"><span id="logo"> JW </span></a>
+
+                <a href="../index.html#work" ontouchend="this.onclick=hover_fix" ><span> Work </span></a>
+                <a href="../index.html#about" ontouchend="this.onclick=hover_fix"><span> About </span></a>
+                <a href="../index.html#contact" ontouchend="this.onclick=hover_fix"><span> Contact </span></a>
+            </div>
+
+            <div class="case_study">
+                <div class="hero" id="money">
+                    <div class="icon" id="cash">
+                        <img src="../img/cash.svg" />
+                    </div>
+                </div>
+
+                <span class="title">Where's My Money?</span>
+                <br>
+                <span class="subtitle">Helping young adults keep track of their spending budget</span>
+                <br>
+                <span class='heading'>Problem</span>
+                <span class='body'>The transition from adolescene to adulthood can be difficult due in part to an increase in responsibilities. One of the young adults face is keeping track of their financial spending. With a limited paycheck, it's important for young adults to be aware of their spending habits in order to make educated  decisions for their financial well-being.</span>
+                <br>
+                <span class='heading'>Research</span>
+                <span class='body'>Several young adults were interviewed with regards to their spending habits. Throughout many of the interviews, users mentioned that they often underpredicted their monthly spendings. 
+                <br><br>
+                When asked a follow-up question about strategies for budget tracking, many people mentioned that they maintain a general idea of their spendings in their heads, but do not formally record their exact transactions. Furthermore, these users added that keeping track of their spending seemed too time-consuming and troublesome.</span>
+                <span class='heading'>Design</span>
+                <span class='body'>As a result of the research, the project goal became to create a user experience that facilitates the process of tracking one's spending in an intuitive, hassle-free manner. Moreover, the project was designed for a mobile app to encourage frequent, on-the-go usage. Ieally, users could easily record their transactions and monitor their overall spending throughout the day.
+                <br><br>
+                The budget tracking process was split into two main user tasks: monitoring past spending and adding recent transactions. When opening the app, users first see an overview of their spending. The total amount spent, spending trends, and amount spent per spending category are displayed. Moreover, if the user would like to epxlore their spending histoy in detail, they're able to navigate to history screen that shows all transactions indidually.
+                <br><br>
+                In addition, it was important to make recording transactions feel effortless and streamedlined in order to encourage usage throughout the day. The process of adding a transaction was split into 2 simple steps: selecting a spending category and then entering the amount spent. Ideally, this process would take no longer than a minute. However, if the users desires to add more details to their transaction for documentation purposes, they're able to record a description and time log.
+                <img src="../img/Money/Sketch.jpg" />
+                <img src="../img/Money/Wireframe.png" />
+                <img src="../img/Money/Mockup.png" /></span>
+            </div>
+
+            <div id="project_nav">
+                <a href="d3.html">
+                    <span class="next">Next
+                        <br>
+                        <span class="title">Cooking Up Something Good</span>
+                    </span>
+                </a>
+                <a href="sentiment.html">
+                    <span class="previous">Previous
+                        <br>
+                        <span class="title">Stocks Have Feelings</span>
+                    </span>
+                </a>
+            </div>
+
+            <div id="footer">
+                <a href="mailto:jwu308@gatech.edu"><span id="email"> <b>Email</b> </span></a>
+
+                <a href="../document/WuJesse_Resume.pdf"><span> Resume </span></a>
+                <a href="https://www.linkedin.com/in/jesse-wu-065820126/"><span> LinkedIn </span></a>
+                <a href="https://dribbble.com/jessesse"><span> Dribbble </span></a>
+
+                <span id="credits"> Website by Jesse Wu </span>
+            </div>
+        </div>
+
+        <div class="overlay" id="sketch" onclick="disappear(this.id)">
+            <img src="../img/Money/Sketch.png" />
+        </div>
+        <div class="overlay" id="wireframe" onclick="disappear(this.id)">
+             <img src="../img/Money/Wireframe.png" />
+        </div>
+        <div class="overlay" id="mockup" onclick="disappear(this.id)">
+             <img src="../img/Money/Iterated.png" />
+        </div>
+    </body>
+
+    <script>
+        function hover_fix()
+        {
+            var el = this;
+            var par = el.parentNode;
+            var next = el.nextSibling;
+            par.removeChild(el);
+            setTimeout(function() {par.insertBefore(el, next);}, 0)
+        }
+    </script>
+
+</html>
