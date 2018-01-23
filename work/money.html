@@ -47,9 +47,9 @@
                 The budget tracking process was split into two main user tasks: monitoring past spending and adding recent transactions. When opening the app, users first see an overview of their spending. The total amount spent, spending trends, and amount spent per spending category are displayed. Moreover, if the user would like to epxlore their spending histoy in detail, they're able to navigate to history screen that shows all transactions indidually.
                 <br><br>
                 In addition, it was important to make recording transactions feel effortless and streamedlined in order to encourage usage throughout the day. The process of adding a transaction was split into 2 simple steps: selecting a spending category and then entering the amount spent. Ideally, this process would take no longer than a minute. However, if the users desires to add more details to their transaction for documentation purposes, they're able to record a description and time log.
-                <img src="../img/Money/Sketch.jpg" />
-                <img src="../img/Money/Wireframe.png" />
-                <img src="../img/Money/Mockup.png" /></span>
+                <img id="sketch" onclick="summon(this.id)" src="../img/Money/Sketch.jpg" />
+                <img id="wireframe" onclick="summon(this.id)" src="../img/Money/Wireframe.png" />
+                <img id="mockup" onclick="summon(this.id)" src="../img/Money/Mockup.png" /></span>
             </div>
 
             <div id="project_nav">
@@ -79,13 +79,13 @@
         </div>
 
         <div class="overlay" id="sketch" onclick="disappear(this.id)">
-            <img src="../img/Money/Sketch.png" />
+            <img src="../img/Money/Sketch.jpg" />
         </div>
         <div class="overlay" id="wireframe" onclick="disappear(this.id)">
              <img src="../img/Money/Wireframe.png" />
         </div>
         <div class="overlay" id="mockup" onclick="disappear(this.id)">
-             <img src="../img/Money/Iterated.png" />
+             <img src="../img/Money/Mockup.png" />
         </div>
     </body>
 
@@ -97,6 +97,20 @@
             var next = el.nextSibling;
             par.removeChild(el);
             setTimeout(function() {par.insertBefore(el, next);}, 0)
+        }
+
+        function disappear(id)
+        {
+            document.querySelector(".overlay" + "#" + id).style.display = "none";
+            document.querySelector("body").style.overflow = "auto";
+            document.querySelector(".case_study .body img ").style.cursor = "zoom-in";
+        }
+
+        function summon(id)
+        {
+            document.querySelector(".overlay" + "#" + id).style.display = "block";
+            document.querySelector("body").style.overflow = "hidden";
+            document.querySelector(".case_study .body img ").style.cursor = "zoom-out";
         }
     </script>
 

@@ -387,7 +387,7 @@ body {
 .case_study .body img {
     width: 100%;
     margin-top: 20px;
-    /*cursor: zoom-in;*/
+    cursor: zoom-in;
 }
 
 .case_study #rating_explanation {
@@ -440,14 +440,15 @@ body {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    width: calc(670px * 1.5);
+    max-width: calc(670px * 1.5);
+    max-height: 100%;
 
     border-radius: 5px;
 }
 
 @media screen and (max-width: 1005px) {
     .overlay img {
-        width: 100%
+        max-width: 100%
     }
 }
 

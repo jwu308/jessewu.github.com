@@ -50,9 +50,9 @@
                 <span class='body'>The early design focused on creating a minimum viable product for conveying market sentiment. The process of learning about market sentiment was split into two main user tasks: searching for a stock and then understanding its sentiment rating. 
                 <br><br>
                 <span id="rating_explanation" onclick="explain_rating()""><i>Click to learn more about the rationale behind the sentiment rating system.</i></span>
-                <img src="../img/Sentiment/Sketch.jpg" />
-                <img src="../img/Sentiment/Early_Wireframe.png" />
-                <img src="../img/Sentiment/Early_Mockup.png" /></span>
+                <img id="sketch" onclick="summon(this.id)" src="../img/Sentiment/Sketch.jpg" />
+                <img id="early_wireframe" onclick="summon(this.id)" src="../img/Sentiment/Early_Wireframe.png" />
+                <img id="early_mockup" onclick="summon(this.id)"src="../img/Sentiment/Early_Mockup.png" /></span>
                 <span class='heading'>User Testing</span>
                 <span class='body'>For testing the early design, both beginner and advanced stock traders were asked to perform a benchmark task of finding sentiment ratings for various stocks. The testing took place on an Invision-based prototype.
                 <br><br>
@@ -66,8 +66,8 @@
                 Categorizing stocks by industry allowed for more browsing and discovery rather than only looking-up stocks with the intent of encouraging exploration for beginner traders. 
                 <br><br>
                 Moreover, the intention behind including relevant news articles was to enable interested traders to investigate the source material and make their own judgements.
-                <img src="../img/Sentiment/Iterated_Wireframe.png" />
-                <img src="../img/Sentiment/Iterated_Mockup.png" /></span>
+                <img id="iterated_wireframe" onclick="summon(this.id)" src="../img/Sentiment/Iterated_Wireframe.png" />
+                <img id="iterated_mockup" onclick="summon(this.id)" src="../img/Sentiment/Iterated_Mockup.png" /></span>
                 <br>
                 <span class='heading'>Front-End Prototype</span>
                 <span class='body'>For rapid prototyping, a basic front-end web prototype was coded using HTML, CSS, and Javascript. When the user searched for a stock, the New York Times API was called and output several news articles about the stock. These news articles were then fed into the Watson sentiment API to calculate an average sentiment rating.
@@ -102,13 +102,19 @@
         </div>
 
         <div class="overlay" id="sketch" onclick="disappear(this.id)">
-            <img src="../img/Sentiment/Sketch.png" />
+            <img src="../img/Sentiment/Sketch.jpg" />
         </div>
-        <div class="overlay" id="wireframe" onclick="disappear(this.id)">
-             <img src="../img/Sentiment/Wireframe.png" />
+        <div class="overlay" id="early_wireframe" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Early_Wireframe.png" />
         </div>
-        <div class="overlay" id="mockup" onclick="disappear(this.id)">
-             <img src="../img/Sentiment/Iterated.png" />
+        <div class="overlay" id="early_mockup" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Early_Mockup.png" />
+        </div>
+        <div class="overlay" id="iterated_wireframe" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Iterated_Wireframe.png" />
+        </div>
+        <div class="overlay" id="iterated_mockup" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Iterated_Mockup.png" />
         </div>
     </body>
 
@@ -125,6 +131,20 @@
         function explain_rating()
         {
             document.getElementById("rating_explanation").innerHTML = "The sentiment rating system ranged from -1 to 1, where -1 represents the most negative sentiment, 0 represents neutral sentiment, and 1 represents the most positive sentiment. This scale was chosen over a tradition 0 to 10 or 0 to 100 scale due to its ability to convey more intuitive sentiment scores. <br><br> In a 0 to 100 scale, high scores are good and low score (typically perceived as below 70) are bad. Under this system, a score of 50 or 50% implies a poor score. However, for sentiment rating, a 50 would actually mean totally neutral; people have no strong feelings in this case. As a result, the -1 to 1 range was chosen to minimize misconceptions and convey the sense that 0 represents an origin point that aligns with neutrality.";
+        }
+
+        function disappear(id)
+        {
+            document.querySelector(".overlay" + "#" + id).style.display = "none";
+            document.querySelector("body").style.overflow = "auto";
+            document.querySelector(".case_study .body img ").style.cursor = "zoom-in";
+        }
+
+        function summon(id)
+        {
+            document.querySelector(".overlay" + "#" + id).style.display = "block";
+            document.querySelector("body").style.overflow = "hidden";
+            document.querySelector(".case_study .body img ").style.cursor = "zoom-out";
         }
     </script>
 

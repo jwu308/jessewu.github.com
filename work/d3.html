@@ -35,19 +35,19 @@
                 <span class="subtitle">Experimenting with design trends for miscellanenous interfaces.</span>
                 <br>
                 <span class='heading'>Display Settings</span>
-                    <span class="body"><img src="../img/d3/settings.png" /></span>
+                    <span class="body"><img id="settings" onclick="summon(this.id)" src="../img/d3/settings.png" /></span>
 
                 <span class='heading'>User Profile</span>
-                    <span class="body"><img src="../img/d3/profile.png" /></span>
+                    <span class="body"><img id="profile" onclick="summon(this.id)" src="../img/d3/profile.png" /></span>
 
                 <span class='heading'>Status Update</span>
-                    <span class="body"><img src="../img/d3/success_error.png" /></span>
+                    <span class="body"><img id="success_error" onclick="summon(this.id)" src="../img/d3/success_error.png" /></span>
 
-                <span class='heading'>Shoe Product Page</span>
-                    <span class="body"><img src="../img/d3/product.png" /></span>
+                <span class='heading'>Store Profile</span>
+                    <span class="body"><img id="product" onclick="summon(this.id)" src="../img/d3/product.png" /></span>
 
                 <span class='heading'>Agency Landing Page</span>
-                    <span class="body"><img src="../img/d3/landing.png" /></span>
+                    <span class="body"><img id="landing" onclick="summon(this.id)" src="../img/d3/landing.png" /></span>
             </div>
 
             <div id="project_nav">
@@ -75,6 +75,22 @@
                 <span id="credits"> Website by Jesse Wu </span>
             </div>
         </div>
+
+        <div class="overlay" id="settings" onclick="disappear(this.id)">
+            <img src="../img/d3/settings.png" />
+        </div>
+        <div class="overlay" id="profile" onclick="disappear(this.id)">
+             <img src="../img/d3/profile.png" />
+        </div>
+        <div class="overlay" id="success_error" onclick="disappear(this.id)">
+             <img src="../img/d3/success_error.png" />
+        </div>
+        <div class="overlay" id="product" onclick="disappear(this.id)">
+             <img src="../img/d3/product.png" />
+        </div>
+        <div class="overlay" id="landing" onclick="disappear(this.id)">
+             <img src="../img/d3/landing.png" />
+        </div>
     </body>
 
     <script>
@@ -85,6 +101,20 @@
             var next = el.nextSibling;
             par.removeChild(el);
             setTimeout(function() {par.insertBefore(el, next);}, 0)
+        }
+
+        function disappear(id)
+        {
+            document.querySelector(".overlay" + "#" + id).style.display = "none";
+            document.querySelector("body").style.overflow = "auto";
+            document.querySelector(".case_study .body img ").style.cursor = "zoom-in";
+        }
+
+        function summon(id)
+        {
+            document.querySelector(".overlay" + "#" + id).style.display = "block";
+            document.querySelector("body").style.overflow = "hidden";
+            document.querySelector(".case_study .body img ").style.cursor = "zoom-out";
         }
     </script>
 
