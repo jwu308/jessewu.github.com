@@ -35,24 +35,24 @@
                 <span class="subtitle">Conveying public sentiment towards company stocks based on social media</span>
                 <br>
                 <span class='heading'>Problem</span>
-                <span class='body'>Stock trading can seem very daunting. When first starting out, new users may feel overwhelmed by the number of graphs, charts, and financial concepts.
+                <span class='body'>Stock trading can seem daunting. When first starting out, new users may feel overwhelmed by the number of graphs, charts, and financial concepts.
                 <br><br>
-                This project attempts to address the learning barrier for stock trading. More specifically, how can beginners be introduced to stocks in simple and intuitive way?</span>
+                This project attempts to address the learning barrier for stock trading. More specifically, how can beginners be introduced to stocks in a simple and intuitive way?</span>
                 <br>
                 <span class='heading'>Research</span>
                 <span class='body'>Preliminary research showed that the stock market is generally affected by three factors: fundamental factors, technical factors, and market sentiment.
                 <br>
-                Based on interviews with traders of all levels, it was revealed that:
+                Based on interviews with a variety of stock traders, it was revealed that:
                 <br><br>
                 <ul>
                     <li>Fundamental and technical factors typically require extensive background knowledge to fully understand</li>
-                    <li>Market sentiment was thought to be the easiest of the three to understand: if many people act on a belief that a stock is going to do very well, it's likely for its price to rise</li>
+                    <li>Market sentiment was thought to be the easiest of the three to understand: if many people act on a belief that a stock is going to do very well, then it's likely for its price to rise</li>
                 </ul>
                 <br>
                 As a result, the direction of the project shifted to creating an intuitive tool for presenting market sentiment data with the intent of familiarizing beginner traders with a relatively simple yet pervasive concept in stock trading.
                 <br></span>
                 <span class='heading'>Early Design</span>
-                <span class='body'>The early design focused on creating a minimum viable product. The process of absorbing market sentiment data was split into two main user tasks: 
+                <span class='body'>The early design focused on creating a minimum viable product. The process of absorbing market sentiment data was broken down into two main user tasks: 
                 <br><br>
                 <ul>
                     <li>Searching for a stock</li>
@@ -64,32 +64,32 @@
                 <img id="early_wireframe" onclick="summon(this.id)" src="../img/Sentiment/Early_Wireframe.png" />
                 <img id="early_mockup" onclick="summon(this.id)"src="../img/Sentiment/Early_Mockup.png" /></span>
                 <span class='heading'>User Testing</span>
-                <span class='body'>For testing the early design, both beginner and advanced stock traders were asked to perform a benchmark task of finding sentiment ratings for various stocks. The testing took place on an Invision-based prototype.
+                <span class='body'>For testing the early design, both beginner and experiened stock traders were asked to perform a benchmark task of finding sentiment ratings for various stocks. The testing took place on an Invision-based prototype.
                 <br><br>
-                Observations and feedback from the beginner traders revealed that:
+                Observations and feedback from the beginner traders revealed:
                 <br><br>
                 <ul>
                     <li>Interface felt easy to navigate</li>
-                    <li>Difficult to discover sentiment ratings for new companies</li>
-                    <li>Minimalistic search bar interface felt too open-ended; some direction would be appreciated</li>
+                    <li>Difficult to discover new companies for their sentiment ratings</li>
+                    <li>Minimalistic search bar interface felt very open-ended; some direction would be appreciated</li>
                 </ul>
                 <br>
                 Moreover, observations and feedback from the expert traders showed that: 
                 <br><Br>
                 <ul>
-                    <li>Data was too sparse for their own uses; however, its simplicity would be fitting for casuals
-                    <li>Individual sentiment ratings did not tell enough of the story; need more contextual data</li>
+                    <li>Sentiment data was too sparse for their own uses, but it may be useful for beginners 
+                    <li>Individual sentiment ratings did not tell enough of the story without more contexual data</li>
                 </ul>
                 <span class='heading'>Iterated Design</span>
-                <span class='body'>In the iterated design, several features were changed and added to address the user testing results: 
+                <span class='body'>In the iterated design, several features were changed and added to address the findings from the user testing: 
                 <br><br>
                 <ul>
                     <li>Stocks are browsable by industry categories</li>
                     <li>Two or more stocks' sentiment ratings can be compared side-by-side</li>
-                    <li>List of the latest news articles about the stock company be shown</li>
+                    <li>Latest news articles about the stock company be shown</li>
                 </ul>
                 <br>
-                The intent behind categorizing stocks by industry was to encourage browsing and discovery of new stocks rather than solely looking-up familiar stocks.
+                The intent behind categorizing stocks by industry was to encourage browsing and discovery of new stocks rather than solely looking-up familiar stocks. This feature would also help to illuminate industry trends in the stock market.
                 <br><br>
                 Moreover, the motivation behind including relevant news articles was to enable interested traders to investigate the source material and make their own judgements.
                 <img id="iterated_wireframe" onclick="summon(this.id)" src="../img/Sentiment/Iterated_Wireframe.png" />
@@ -106,7 +106,7 @@
                     <li>IBM Watson Sentiment API</li>
                 </ul>
                 <br>
-                When the user searched for a stock, the New York Times API was called and returned several news articles about the stock. These news articles were then fed into the Watson sentiment API to calculate an average sentiment rating.
+                When the user searched for a stock, the New York Times API was called and returned several news articles about the stock's company. These news articles were then fed into the Watson sentiment API to calculate an average sentiment rating.
                 <br><br>
                 For future iterations, there would be a focus on:
                 <br><br>
