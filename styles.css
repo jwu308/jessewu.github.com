@@ -495,7 +495,7 @@ body {
 
     animation-name: scale;
     animation-duration: 0.3s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in;
 }
 
 #loading .icon_row .icon img {
@@ -505,9 +505,22 @@ body {
     left: 50%;
 }
 
+/*
+animation durations:
+0-0.3
+0.3-0.6
+0.6-0.9
+0.9-1.2
+
+0-0.3
+0.2-0.5
+0.4-0.7
+0.6-0.9
+*/
+
 #loading .icon_row .icon#slice {
     background: #FFE8CE;
-    animation-delay: 0.2s;
+    animation-delay: 0.3s;
 }
 
 #loading .icon_row .icon#smiley {
@@ -516,12 +529,12 @@ body {
 
 #loading .icon_row .icon#cash {
     background: #CEFFDF;
-    animation-delay: 0.5s;
+    animation-delay: 0.6s;
 }
 
 #loading .icon_row .icon#graph {
     background: #D0F9FF;
-    animation-delay: 0.8s;
+    animation-delay: 0.9s;
 }
 
 #loading .icon_row .icon#slice img {
@@ -691,7 +704,44 @@ body {
         text-align: center;
         display: block;
     }
-}
+
+    #loading .icon_row {
+        width: 306px;
+        height: 65px;
+
+        margin: -32px 0px 0px -153px; /* 130px height, 700px width */
+    }
+
+    #loading .icon_row .icon {
+        width: 65px;
+        height: 65px;
+
+        border-radius: 5px;
+    }
+
+    #loading .icon_row .icon#slice img {
+        width: 46px;
+        height: 47px;
+        margin: -23px 0px 0px -23px; /* 47px height, 46px width */
+    }
+
+    #loading .icon_row .icon#smiley img {
+        width: 47px;
+        height: 46px;
+        margin: -23px 0px 0px -23px; /* 46x height, 47px width */
+    }
+
+    #loading .icon_row .icon#cash img {
+        width: 46px;
+        height: 33px;
+        margin: -16px 0px 0px -23px; /* 33px height, 46px width */
+    }
+
+    #loading .icon_row .icon#graph img {
+        width: 40px;
+        height: 49px;
+        margin: -24px 0px 0px -20px; /* 49px height, 40px width */
+    }
 
 @media screen and (max-width: 350px) {
     #work .project {
