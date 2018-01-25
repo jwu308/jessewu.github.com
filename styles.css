@@ -742,6 +742,7 @@ animation durations:
         height: 49px;
         margin: -24px 0px 0px -20px; /* 49px height, 40px width */
     }
+}
 
 @media screen and (max-width: 350px) {
     #work .project {
