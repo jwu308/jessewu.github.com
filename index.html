@@ -125,6 +125,23 @@
                 <span id="credits"> Website by Jesse Wu </span>
             </div>
         </div>
+
+        <div id="loading">
+            <div class="icon_row">
+                <div class="icon" id="smiley">
+                    <img src="img/smiley.svg" />
+                </div>
+                <div class="icon" id="slice">
+                    <img src="img/slice.svg" />
+                </div>
+                <div class="icon" id="cash">
+                    <img src="img/cash.svg" />
+                </div>
+                <div class="icon" id="graph">
+                    <img src="img/flask.svg" />
+                </div>
+            </div>
+        </div> 
     </body>
 
     <script>
@@ -136,6 +153,10 @@
             par.removeChild(el);
             setTimeout(function() {par.insertBefore(el, next);}, 0)
         }
+
+        setTimeout(function() {
+            document.getElementById("loading").style.display = "none";
+        }, 1700);
     </script>
 
 </html>

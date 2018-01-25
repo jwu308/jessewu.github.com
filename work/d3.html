@@ -91,6 +91,23 @@
         <div class="overlay" id="landing" onclick="disappear(this.id)">
              <img src="../img/d3/landing.png" />
         </div>
+
+        <div id="loading">
+            <div class="icon_row">
+                <div class="icon" id="smiley">
+                    <img src="../img/smiley.svg" />
+                </div>
+                <div class="icon" id="slice">
+                    <img src="../img/slice.svg" />
+                </div>
+                <div class="icon" id="cash">
+                    <img src="../img/cash.svg" />
+                </div>
+                <div class="icon" id="graph">
+                    <img src="../img/flask.svg" />
+                </div>
+            </div>
+        </div> 
     </body>
 
     <script>
@@ -116,6 +133,10 @@
             document.querySelector("body").style.overflow = "hidden";
             document.querySelector(".case_study .body img ").style.cursor = "zoom-out";
         }
+
+        setTimeout(function() {
+            document.getElementById("loading").style.display = "none";
+        }, 1700);
     </script>
 
 </html>  

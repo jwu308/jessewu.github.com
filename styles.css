@@ -446,6 +446,119 @@ body {
     border-radius: 5px;
 }
 
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background: white;
+
+    z-index: 3;
+
+    animation-name: fade;
+    animation-duration: 0.5s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+#loading .icon_row {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 700px;
+    height: 130px;
+
+    margin: -65px 0px 0px -350px; /* 130px height, 700px width */
+
+    text-align: justify;
+}
+
+#loading .icon_row:after {
+  content: '';
+  width: 100%; /* Ensures justification for single lines */
+  display: inline-block;
+}
+
+#loading .icon_row .icon {
+    display: inline-block;
+
+    position: relative;
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 10px;
+
+    animation-name: scale;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+
+#loading .icon_row .icon img {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+}
+
+#loading .icon_row .icon#slice {
+    background: #FFE8CE;
+    animation-delay: 0.2s;
+}
+
+#loading .icon_row .icon#smiley {
+    background: #F2FBCA;
+}
+
+#loading .icon_row .icon#cash {
+    background: #CEFFDF;
+    animation-delay: 0.5s;
+}
+
+#loading .icon_row .icon#graph {
+    background: #D0F9FF;
+    animation-delay: 0.8s;
+}
+
+#loading .icon_row .icon#slice img {
+    width: 93px;
+    height: 94px;
+    margin: -47px 0px 0px -46px; /* 94px height, 93px width */
+}
+
+#loading .icon_row .icon#smiley img {
+    width: 93px;
+    height: 93px;
+    margin: -46px 0px 0px -46px; /* 93x height, 93px width */
+}
+
+#loading .icon_row .icon#cash img {
+    width: 92px;
+    height: 67px;
+    margin: -33px 0px 0px -46px; /* 67px height, 92px width */
+}
+
+#loading .icon_row .icon#graph img {
+    width: 80px;
+    height: 98px;
+    margin: -49px 0px 0px -40px; /* 98px height, 80px width */
+}
+
+@keyframes scale {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+}
+
+@keyframes fade {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 @media screen and (max-width: 1005px) {
     .overlay img {
         max-width: 100%
