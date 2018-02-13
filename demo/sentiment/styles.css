@@ -1,0 +1,219 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+
+    font-size: 20px;
+    color: rgb(74, 74, 74);
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+	position: relative;
+	width: 732px;
+	margin: 0px auto;
+	padding-top: 40px;
+}
+
+#logo {
+	text-align: center;
+}
+
+#logo.header {
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+#logo.header img{
+	width: 100%;
+	height: 100%;
+}
+
+#logo.header:hover {
+	transform: scale(1.2);
+}
+
+#title {
+	margin-top: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+#subtitle {
+	text-align: center;
+}
+
+#stock_search {
+	position: relative;
+	text-align: center;
+	margin-top: 80px;
+}
+
+#stock_search.header {
+	margin-top: 0px;
+}
+
+
+#stock_search #stock_name {
+	width: 240px;
+	height: 60px;
+
+	border-radius: 10px;
+	border: 1px solid #F7F7F7;
+	background: #F7F7F7;
+	padding-left: 20px;
+
+	font-size: 20px;
+	color: #9B9B9B;
+}
+
+#stock_search #right_arrow {
+	position: absolute;
+	left: 70%;
+	top: 25%;
+
+	cursor: pointer;
+  	transition: transform 0.5s ease;
+}
+
+#stock_search #right_arrow:hover {
+	transform: translateX(15px);
+}
+
+input:focus {
+	outline: none;
+}
+
+.separator {
+	margin-top: 40px;
+	text-align: center;
+}
+
+#select_prompt {
+	margin-top: 40px;
+	text-align: center;
+}
+
+#industries {
+	margin-top: 20px;
+	text-align: justify;
+}
+
+#industries:after {
+  content: '';
+  width: 100%; /* Ensures justification for single lines */
+  display: inline-block;
+}
+
+#industries .industry{
+	display: inline-block;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+#industries .industry:hover {
+	transform: scale(1.3);
+}
+
+#favorites.header {
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	cursor: pointer;
+
+	transition: 0.25s;
+}
+
+#favorites.header:hover {
+	transform: scale(1.2);
+}
+
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background: white;
+
+    z-index: 3;
+
+    animation-name: fade;
+    animation-duration: 0.5s;
+    animation-delay: 1.7s;
+    animation-fill-mode: forwards;
+}
+
+#loading #logo {
+	position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 160px;
+    height: 160px;
+
+    margin: -80px 0px 0px -80px; /* 160px height, 160px width */
+    animation-name: scale;
+    animation-duration: 1.5s;
+}
+
+#stock_name_title {
+	font-size: 36px;
+	font-weight: bold;
+
+	position: relative;
+
+	width: 317px;
+	margin: 80px auto 0px auto;
+}
+
+#stock_name_title #stock_logo {
+	position: absolute;
+	top: 3px;
+	left: -50px;
+}
+
+#sentiment_circle {
+	width: 280px;
+	height: 280px;
+	border-radius: 50%;
+	background: #63F199;
+	margin: 40px auto 0px auto;
+}
+
+#sentiment_rating {
+	position: absolute;
+
+	left: 50%;
+	top: 50%;
+
+	width: 200px;
+
+	margin: -180px 0px 0px -100px;
+
+	font-size: 144px;
+	color: white;
+}
+
+@keyframes fade {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes scale {
+    0% {transform: scale(1);}
+    25% {transform: scale(1.2);}
+    50% {transform: scale(1);}
+    75% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
