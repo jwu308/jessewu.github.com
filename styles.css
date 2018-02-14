@@ -106,40 +106,40 @@ body {
 
 #work .project:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 #work .project#pizza {
     background: #FFF7EE;
 }
 
-#work .project#pizza:hover {
+/*#work .project#pizza:hover {
     background: #FFF0E0;
 }
-
+*/
 #work .project#sentiment {
     background: #FCFFEE;
 }
 
-#work .project#sentiment:hover {
+/*#work .project#sentiment:hover {
     background: #F8FFD9;
 }
-
+*/
 #work .project#money {
     background: #EEFFF4;
 }
 
-#work .project#money:hover {
+/*#work .project#money:hover {
     background: #E2FFEE;
-}
+}*/
 
 #work .project#d3 {
     background: #EEFDFF;
 }
 
-#work .project#d3:hover {
+/*#work .project#d3:hover {
     background: #E3FCFF;
-}
+}*/
 
 #work .project span {
     display: inline-block;
