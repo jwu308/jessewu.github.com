@@ -387,12 +387,27 @@ body {
 
 .case_study .body img {
     width: 100%;
-    margin-top: 20px;
     cursor: zoom-in;
+    margin-top: 20px;
 }
 
 .case_study #rating_explanation {
     cursor: pointer;
+}
+
+.case_study .img_row {
+    text-align: justify;
+    height: 253px;
+}
+
+.case_study .img_row:after {
+  content: '';
+  width: 100%; /* Ensures justification for single lines */
+  display: inline-block;
+}
+
+.case_study .img_row img{
+    width: 49%;
 }
 
 #project_nav {

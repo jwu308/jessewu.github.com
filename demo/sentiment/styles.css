@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+	color: rgb(74, 74, 74);
+}
+
 body {
 
     font-size: 20px;
@@ -262,6 +267,134 @@ input:focus {
 
 #actions img:hover {
 	transform: scale(1.1);
+}
+
+#industry_logo {
+	width: 120px;
+	height: 154px;
+
+	margin: 40px auto 0px auto;
+}
+
+#list {
+	margin-top: 60px;
+}
+
+.row {
+	position: relative;
+	cursor: pointer;
+
+	width: 732px;
+	height: 70px;
+
+	margin-top: 30px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.row #logo {
+	position: absolute;
+	left: 0px;
+	top: 7px;
+}
+
+.row #name {
+	position: absolute;
+	left: 45px;
+	top: 7px;
+
+	font-size: 24px;
+}
+
+.row .rating_circle {
+	position: absolute;
+	left: 400px;
+	top: 0px;
+
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.row .rating_circle.green {
+	background: #63F199;
+}
+
+.row .rating_circle.yellow {
+	background: #FEB551;
+}
+
+.row .rating_circle.red {
+	background: #F77A7A;
+}
+
+.row .rating_circle .rating_value {
+	position: absolute;
+	left: 6px;
+	top: 8px;
+
+	color: white;
+}
+
+.row .rating_circle.red .rating_value {
+	left:3px;
+}
+
+.row .emoji {
+	position: absolute;
+	left: 450px;
+	top: 0px;
+
+	width: 40px;
+	height: 40px;
+}
+
+.row .emoji img {
+	width: 100%;
+	height: 100%;
+}
+
+.row .add_as_favorite {
+	position: absolute;
+	left: 613px;
+	top: -10px;
+
+	transition: .25s;
+	cursor: pointer;
+}
+
+.row .add_as_favorite:hover {
+	transform: scale(1.2);
+}
+
+.list_actions {
+	position: relative;
+	margin-top: 40px;
+	width: 732px;
+	height: 60px;
+}
+
+.list_actions #sort {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+.list_actions #right_arrow {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+.list_actions #right_arrow:hover {
+	transform: translateX(15px);
+}
+
+.list_actions #sort:hover {
+	transform: scale(1.2);
 }
 
 @keyframes fade {

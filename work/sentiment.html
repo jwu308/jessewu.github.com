@@ -61,8 +61,14 @@
                 <br>
                 <span id="rating_explanation" onclick="explain_rating()""><i>Click to learn more about the sentiment rating system.</i></span>
                 <img id="sketch" onclick="summon(this.id)" src="../img/Sentiment/Sketch.jpg" />
-                <img id="early_wireframe" onclick="summon(this.id)" src="../img/Sentiment/Early_Wireframe.png" />
-                <img id="early_mockup" onclick="summon(this.id)"src="../img/Sentiment/Early_Mockup.png" /></span>
+                <div class="img_row">
+                    <img id="early_wireframe_menu" onclick="summon(this.id)" src="../img/Sentiment/early_wireframe_menu.png" />
+                    <img id="early_wireframe_stock" onclick="summon(this.id)" src="../img/Sentiment/early_wireframe_stock.png" />
+                </div>
+                <div class="img_row">
+                    <img id="early_mockup_menu" onclick="summon(this.id)" src="../img/Sentiment/early_mockup_menu.png" />
+                    <img id="early_mockup_stock" onclick="summon(this.id)" src="../img/Sentiment/early_mockup_stock.png" />
+                </div>
                 <span class='heading'>User Testing</span>
                 <span class='body'>For testing the early design, both beginner and experiened stock traders were asked to perform a benchmark task of finding sentiment ratings for various stocks. The testing took place on an Invision-based prototype.
                 <br><br>
@@ -92,9 +98,26 @@
                 The intent behind categorizing stocks by industry was to encourage browsing and discovery of new stocks rather than solely looking-up familiar stocks. This feature would also help to illuminate industry trends in the stock market.
                 <br><br>
                 Moreover, the motivation behind including relevant news articles was to enable interested traders to investigate the source material and make their own judgements.
-                <img id="iterated_wireframe" onclick="summon(this.id)" src="../img/Sentiment/Iterated_Wireframe.png" />
-                <img id="iterated_mockup" onclick="summon(this.id)" src="../img/Sentiment/Iterated_Mockup.png" /></span>
-                <br>
+                <div class="img_row">
+                    <img id="iterated_wireframe_menu" onclick="summon(this.id)" src="../img/Sentiment/iterated_wireframe_menu.png" />
+                    <img id="iterated_wireframe_list" onclick="summon(this.id)" src="../img/Sentiment/iterated_wireframe_list.png" />
+                </div>
+                <div class="img_row">
+                    <img id="iterated_wireframe_favorites" onclick="summon(this.id)" src="../img/Sentiment/iterated_wireframe_favorites.png" />
+                    <img id="iterated_wireframe_compare" onclick="summon(this.id)" src="../img/Sentiment/iterated_wireframe_compare.png" />
+                </div>
+                <div class="img_row">
+                    <img id="iterated_mockup_menu" onclick="summon(this.id)" src="../img/Sentiment/iterated_mockup_menu.png" />
+                    <img id="iterated_mockup_list" onclick="summon(this.id)" src="../img/Sentiment/iterated_mockup_list.png" />
+                </div>
+                <div class="img_row">
+                    <img id="iterated_mockup_favorites" onclick="summon(this.id)" src="../img/Sentiment/iterated_mockup_favorites.png" />
+                    <img id="iterated_mockup_stock" onclick="summon(this.id)" src="../img/Sentiment/iterated_mockup_stock.png" />
+                </div>
+                <div class="img_row">
+                    <img id="iterated_mockup_compare" onclick="summon(this.id)" src="../img/Sentiment/iterated_mockup_compare.png" />
+                    <img id="iterated_mockup_news" onclick="summon(this.id)" src="../img/Sentiment/iterated_mockup_news.png" />
+                </div>
                 <span class='heading'>Front-End Prototype</span>
                 <span class='body'>For rapid prototyping, a basic front-end web prototype was coded using: 
                 <br><br>
@@ -139,17 +162,47 @@
         <div class="overlay" id="sketch" onclick="disappear(this.id)">
             <img src="../img/Sentiment/Sketch.jpg" />
         </div>
-        <div class="overlay" id="early_wireframe" onclick="disappear(this.id)">
-             <img src="../img/Sentiment/Early_Wireframe.png" />
+        <div class="overlay" id="early_wireframe_menu" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Early_Wireframe_menu.png" />
         </div>
-        <div class="overlay" id="early_mockup" onclick="disappear(this.id)">
-             <img src="../img/Sentiment/Early_Mockup.png" />
+        <div class="overlay" id="early_wireframe_stock" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Early_Wireframe_stock.png" />
         </div>
-        <div class="overlay" id="iterated_wireframe" onclick="disappear(this.id)">
-             <img src="../img/Sentiment/Iterated_Wireframe.png" />
+        <div class="overlay" id="early_mockup_menu" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Early_Mockup_menu.png" />
         </div>
-        <div class="overlay" id="iterated_mockup" onclick="disappear(this.id)">
-             <img src="../img/Sentiment/Iterated_Mockup.png" />
+        <div class="overlay" id="early_mockup_stock" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Early_Mockup_stock.png" />
+        </div>
+        <div class="overlay" id="iterated_wireframe_menu" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Iterated_Wireframe_menu.png" />
+        </div>
+        <div class="overlay" id="iterated_wireframe_list" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Iterated_Wireframe_list.png" />
+        </div>
+        <div class="overlay" id="iterated_wireframe_favorites" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/iterated_wireframe_favorites.png" />
+        </div>
+        <div class="overlay" id="iterated_wireframe_compare" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Iterated_Wireframe_compare.png" />
+        </div>
+        <div class="overlay" id="iterated_mockup_menu" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Iterated_Mockup_menu.png" />
+        </div>
+        <div class="overlay" id="iterated_mockup_list" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Iterated_Mockup_list.png" />
+        </div>
+        <div class="overlay" id="iterated_mockup_stock" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Iterated_Mockup_stock.png" />
+        </div>
+        <div class="overlay" id="iterated_mockup_favorites" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Iterated_Mockup_Favorites.png" />
+        </div>
+        <div class="overlay" id="iterated_mockup_compare" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Iterated_Mockup_compare.png" />
+        </div>
+        <div class="overlay" id="iterated_mockup_news" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Iterated_Mockup_news.png" />
         </div>
 
         <div id="loading">
