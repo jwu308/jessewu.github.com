@@ -687,6 +687,10 @@ animation durations:
         width: calc(100% - var(--padding_small) * 2);
     }
 
+    .case_study .img_row {
+        height: 153px;
+    }
+
     #contact .section {
         padding: 0px 10px;
         text-align: center;
@@ -706,7 +710,6 @@ animation durations:
     #footer span {
         margin-left: 4px;
     }
-
 
     #project_nav .previous {
         float: none;
