@@ -85,11 +85,11 @@ body {
 	top: 25%;
 
 	cursor: pointer;
-  	transition: transform 0.5s ease;
+  	transition: transform 0.25s;
 }
 
 #stock_search #right_arrow:hover {
-	transform: translateX(15px);
+	transform: translateX(10px);
 }
 
 input:focus {
@@ -188,6 +188,10 @@ input:focus {
 	left: -50px;
 }
 
+#single_stock {
+	margin-top: 40px;
+}
+
 #sentiment_circle {
 	position: relative;
 
@@ -195,7 +199,7 @@ input:focus {
 	height: 280px;
 	border-radius: 50%;
 	background: #63F199;
-	margin: 40px auto 0px auto;
+	margin: 0px auto;
 }
 
 #sentiment_circle #sentiment_rating {
@@ -249,9 +253,16 @@ input:focus {
 }
 
 #actions {
-	width: 723px;
+	/*width: 723px;
 	margin: 80px auto 0px auto;
+	text-align: justify;*/
+
+	position: absolute;
+	width: 100%;
 	text-align: justify;
+
+	left: 0px;
+	top: 850px;
 }
 
 #actions:after {
@@ -390,11 +401,52 @@ input:focus {
 }
 
 .list_actions #right_arrow:hover {
-	transform: translateX(15px);
+	transform: translateX(10px);
 }
 
 .list_actions #sort:hover {
 	transform: scale(1.2);
+}
+
+#news {
+	margin-top: 40px;
+	opacity: 0;
+}
+
+#news .headline {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+#news .preview {
+	margin-top: 10px;
+}
+
+#news .separator {
+	margin-top: 20px;
+}
+
+#news .right_arrow {
+	margin-top: 20px;
+	text-align: right;
+}
+
+#news .right_arrow img{
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+#news .right_arrow img:hover {
+	transform: translateX(10px);
+}
+
+#comparison {
+	margin-top: 20px;
+}
+
+#comparison .compared_stock {
+
 }
 
 @keyframes fade {
