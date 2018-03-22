@@ -102,6 +102,8 @@
                 The intent behind categorizing stocks by industry was to encourage browsing and discovery of new stocks rather than solely looking-up familiar stocks. This feature would also help to illuminate industry trends in the stock market.
                 <br><br>
                 Moreover, the motivation behind including relevant news articles was to enable interested traders to investigate the source material and make their own judgements.
+                <img id="task_flow" onclick="summon(this.id)" src="../img/Sentiment/Task_Flow.png" />
+                <img id="mockup_flow" onclick="summon(this.id)" src="../img/Sentiment/Mockup_Flow.png" />
                 <div class="img_row">
                     <img id="iterated_wireframe_menu" onclick="summon(this.id)" src="../img/Sentiment/iterated_wireframe_menu.png" />
                     <img id="iterated_wireframe_list" onclick="summon(this.id)" src="../img/Sentiment/iterated_wireframe_list.png" />
@@ -122,8 +124,11 @@
                     <img id="iterated_mockup_compare" onclick="summon(this.id)" src="../img/Sentiment/iterated_mockup_compare.png" />
                     <img id="iterated_mockup_news" onclick="summon(this.id)" src="../img/Sentiment/iterated_mockup_news.png" />
                 </div>
-                <span class='heading'>Front-End Prototype</span>
-                <span class='body'>For rapid prototyping, a basic front-end web prototype was coded using: 
+                <span class='heading'>Prototype</span>
+                <span class='body'>
+                A simple hotspot-based prototype was built using Sketch's prototyping functionality. The prototype can be demo'd here: <a href='https://sketch.cloud/s/vRl3M/all/mockups/desktop-hd-copy-2/play'> Click here </a>
+                <br><br>
+                For front-end prototyping with real data, a basic front-end web prototype was coded using: 
                 <br><br>
                 <ul>
                     <li>HTML</li>
@@ -133,7 +138,7 @@
                     <li>IBM Watson Sentiment API</li>
                 </ul>
                 <br>
-                When the user searched for a stock, the New York Times API was called and returned several news articles about the stock's company. These news articles were then fed into the Watson sentiment API to calculate an average sentiment rating.
+                When the user searched for a stock, the New York Times API was called and returned several news articles about the stock's company. These news articles were then fed into the Watson sentiment API to calculate an average sentiment rating. (This front-end prototype is still being completed.)
                 <br><br>
                 For future iterations, there would be a focus on:
                 <br><br>
@@ -207,6 +212,12 @@
         </div>
         <div class="overlay" id="iterated_mockup_news" onclick="disappear(this.id)">
              <img src="../img/Sentiment/iterated_mockup_news.png" />
+        </div>
+         <div class="overlay" id="task_flow" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Task_Flow.png" />
+        </div>
+        <div class="overlay" id="mockup_flow" onclick="disappear(this.id)">
+             <img src="../img/Sentiment/Mockup_Flow.png" />
         </div>
 
         <div id="loading">
