@@ -113,7 +113,7 @@
                 <br><br>
                 Based on the wireframes, a high-fidelity mockups were created. A style guide was used to promote consistency among the various designers:
                 <img src='../img/pocketdoc/style_guide.png' />
-                <img src='../img/pocketdoc/mockups.png' />
+                <img id='mockups' onclick="summon(this.id)" src='../img/pocketdoc/mockups.png' />
                 <br><br>
                 While the screen flows were being created, a sketch and high-fidelity render was concurrently designed for the physical kiosk model. There was an emphasis placed on conveying the physical hardware features of the kiosk for body measurements, such as a weight-sensitive platform and BPM handles.
                 <img src='../img/pocketdoc/kiosk_sketch.jpg' />
@@ -148,17 +148,8 @@
                 <!-- <span id="credits"> Website by Jesse Wu </span> -->
             </div>
         </div>
-        <div class="overlay" id="sketch" onclick="disappear(this.id)">
-            <img src="../img/Pizza/Sketch.png" />
-        </div>
-        <div class="overlay" id="blockframe" onclick="disappear(this.id)">
-             <img src="../img/Pizza/Blockframe.png" />
-        </div>
-        <div class="overlay" id="wireframe" onclick="disappear(this.id)">
-             <img src="../img/Pizza/Wireframe.png" />
-        </div>
-        <div class="overlay" id="iterated" onclick="disappear(this.id)">
-             <img src="../img/Pizza/Iterated.png" />
+        <div class="overlay" id="mockups" onclick="disappear(this.id)">
+            <img src="../img/pocketdoc/mockups.png" />
         </div>
 
         <div id="loading">
