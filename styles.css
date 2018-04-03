@@ -109,7 +109,20 @@ body {
     transform: scale(1.15);
 }
 
+#work .bonus {
+    transition: 0.25s;
+}
+
+#work .bonus:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
 #work .project#pizza {
+    background: #FFF7EE;
+}
+
+#work .project#pocketdoc {
     background: #FFF7EE;
 }
 
@@ -182,6 +195,10 @@ body {
     background: #FFE8CE;
 }
 
+#work .project#pizza .icon#pocketdoc {
+    background: #FFE8CE;
+}
+
 #work .project#sentiment .icon#smiley {
     background: #F2FBCA;
 }
@@ -196,6 +213,10 @@ body {
 
 #work .project#pizza .icon#slice img {
     margin: -91px 0px 0px -90px; /* 182px height, 180px width */
+}
+
+#work .project#pizza .icon#pocketdoc img {
+    margin: -82px 0px 0px -90px; /* 162.7px height, 180px width */
 }
 
 #work .project#sentiment .icon#smiley img {
@@ -293,6 +314,10 @@ body {
     background: #FFF7EE;
 }
 
+.case_study .hero#pocketdoc {
+    background: #FFF7EE;
+}
+
 .case_study .hero#sentiment {
     background: #FCFFEE;
 }
@@ -330,6 +355,11 @@ body {
     background: #FFE8CE;
 }
 
+.case_study .hero .icon#pocketdoc {
+    background: #FFE8CE;
+}
+
+
 .case_study .hero .icon#smiley {
     background: #F2FBCA;
 }
@@ -344,6 +374,10 @@ body {
 
 .case_study .hero .icon#slice img {
     margin: -91px 0px 0px -90px; /* 182px height, 180px width */
+}
+
+.case_study .hero .icon#pocketdoc img {
+    margin: -82px 0px 0px -90px; /* 164px height, 180px width */
 }
 
 .case_study .hero .icon#smiley img {
@@ -604,6 +638,12 @@ animation durations:
         width: 90px;
         height: 91px;
         margin: -45px 0px 0px -45px; /* 91px height, 90px width */
+    }
+
+    #work .project#pizza .icon#pocketdoc img {
+        width: 90px;
+        height: 91px;
+        margin: -41px 0px 0px -45px; /* 82px height, 90px width */
     }
 
     #work .project#sentiment .icon#smiley img {
