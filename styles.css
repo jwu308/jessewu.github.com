@@ -207,6 +207,10 @@ body {
     background: #CEFFDF;
 }
 
+#work .project#money .icon#mountains {
+    background: #CEFFDF;
+}
+
 #work .project#d3 .icon#graph {
     background: #D0F9FF;
 }
@@ -225,6 +229,10 @@ body {
 
 #work .project#money .icon#cash img {
     margin: -64px 0px 0px -90px; /* 129px height, 180px width */
+}
+
+#work .project#money .icon#mountains img {
+    margin: -56px 0px 0px -90px; /* 112.5px height, 180px width */
 }
 
 #work .project#d3 .icon#graph img {
@@ -368,6 +376,10 @@ body {
     background: #CEFFDF;
 }
 
+.case_study .hero .icon#mountains {
+    background: #CEFFDF;
+}
+
 .case_study .hero .icon#graph {
     background: #D0F9FF;
 }
@@ -386,6 +398,10 @@ body {
 
 .case_study .hero .icon#cash img {
     margin: -64px 0px 0px -90px; /* 129px height, 180px width */
+}
+
+.case_study .hero .icon#mountains img {
+    margin: -56px 0px 0px -90px; /* 112.5px height, 180px width */
 }
 
 .case_study .hero .icon#graph img {
@@ -642,7 +658,7 @@ animation durations:
 
     #work .project#pizza .icon#pocketdoc img {
         width: 90px;
-        height: 91px;
+        height: 82px;
         margin: -41px 0px 0px -45px; /* 82px height, 90px width */
     }
 
@@ -656,6 +672,12 @@ animation durations:
         width: 90px;
         height: 64px;
         margin: -32px 0px 0px -45px; /* 64px height, 90px width */
+    }
+
+    #work .project#money .icon#mountains img {
+        width: 90px;
+        height: 56px;
+        margin: -28px 0px 0px -45px; /* 56px height, 90px width */
     }
 
     #work .project#d3 .icon#graph img {
