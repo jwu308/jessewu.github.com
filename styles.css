@@ -441,6 +441,13 @@ body {
     margin-top: 20px;
 }
 
+.case_study .body img.prototype {
+    display: block;
+    width: 223px;
+    margin: 20px auto 0px auto;
+    cursor: pointer;
+}
+
 .case_study #rating_explanation {
     cursor: pointer;
 }
@@ -626,6 +633,8 @@ animation durations:
     height: 98px;
     margin: -49px 0px 0px -40px; /* 98px height, 80px width */
 }
+
+
 
 @keyframes scale {
     0% {transform: scale(1);}
