@@ -125,11 +125,54 @@
                 </a>
                 </span>
                 <span class='heading'>User Testing</span>
-                <span class='body'>For the user testing, intermural sports players will be asked to perform benchmark tasks such as diagnosing an injury using the Invision prototype. One of the testing methods to be used is a "think-aloud" walkthrough, in which users will be asked to say aloud their thought process as they step through the flow.
+                <span class='body'>For user testing, heuristic evaluations and think-aloud walkthroughs were conducted using the prototype. 
                 <br><br>
-                Quantitative data such as time to complete a task and overall task accuracy will be collected. Qualitative data such as the users' opinions, feelings, problems, and suggestions towards the prototype will recorded as well. 
+                In the heuristic evaluation, five other students who were also taking human-computer interaction courses acted as the evaluators. Moreover, for the think-aloud walkthroughs, the kiosk prototype was setup near Georgia Tech's intramural fields to establish a realistic context. Nearby players were asked to perform several tasks. 
                 <br><br>
-                To establish a realistic context for user testing, the kiosk prototype will be set up near the SAC fields, which is the intermural sports field at Georgia Tech. Players will be asked to take a couple minutes out of their day to run through the benchmark task of diagnosing a hypothetical injury.
+                For example, in one of the task scenarios, the participant is asked if one of their friend was hurt and exhibiting XYZ symptoms, how might they use the prototype to help diagnose their friend's injury?
+                <br><br>
+                Based on the heuristic evaluations, think-aloud sessions, and follow-up interviews, there were several key takeaways. At a high level, user feedback showed that the:
+                <br><br>
+                <ul>
+                    <li>Idea of a centralized health kiosk seemed reliable and useful</li>
+                    <li>Minimal, blue visual design conveyed a sense of professionalism and trustworthiness</li>
+                    <li>Large kiosk screen may lead to privacy concerns, especially for body measurements</li>
+                    <li>Exercise support feature may be underutilized due to the kiosk's lack of portability; many users preferred to carry a mobile exercise guide that can be accessed anywhere in the gym</li>
+                </ul>
+                <br>
+                At a low level with regards to UI design, the main usability takeaways included:
+                <br><br>
+                <ul>
+                    <li>In the process of selecting the area of injury on the human body diagram, users weren't sure what to do next after clicking a body part and seeing the body label pop-up: </li>
+                    <img src='../img/pocketdoc/injury_area.png' />
+                    <br><br>
+                    <li>In the list of symptoms, it was unclear that one or more of the symptoms could be selected via touch: </li>
+                    <img src='../img/pocketdoc/symptoms.png' />
+                    <br><br>
+                    <li>For the possible diagnoses, users did not understand the meaning of the bar visualizations - which represented the likelihood of a correct diagnosis. Users also didn't know that the conditions could be selected in order to learn more: </li>
+                    <img src='../img/pocketdoc/conditions.png' />
+                </ul>
+                </span>
+                <span class='heading'>Updated Design</span>
+                <span class='body'>Based on the feedback from the user testing, several design iterations were made. In order to quickly produce updated design deliverables, our team decided to focus on addressing the low-level UI problems and save the higher-level product concerns for future iterations. 
+                <br><br>
+                Firstly, to address the problem of users not knowing what to do after selecting an injured area of the body, arrows and lines were added to each body part label to make it more apparent that each label is selectable:
+                <div class="img_row">
+                    <img src="../img/pocketdoc/injury_area.png" />
+                    <img src="../img/pocketdoc/injury_area_updated.png" />
+                </div>
+                <br><br>
+                Similarly, in the list of symptoms, users did not know that the symptoms could be selected. A checkbox was added to each symptom to make it more clear that they were selectable:
+                <div class="img_row">
+                    <img src="../img/pocketdoc/symptoms.png" />
+                    <img src="../img/pocketdoc/symptoms_updated.png" />
+                </div>
+                <br><br>
+                Last but not least, in the list of possible conditions, users did not understand the meaning of the bar visualizations and also did not know that the conditions could be selected to learn more about them. As a result, percentage labels and arrows were added to the symptoms:
+                <div class="img_row">
+                    <img src="../img/pocketdoc/conditions.png" />
+                    <img src="../img/pocketdoc/conditions_updated.png" />
+                </div>
                 </span>
             </div>
 

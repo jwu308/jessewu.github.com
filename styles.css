@@ -454,14 +454,14 @@ body {
 
 .case_study .img_row {
     text-align: justify;
-    height: 253px;
+/*    height: 253px;*/
 }
 
-.case_study .img_row:after {
+/*.case_study .img_row:after {
   content: '';
-  width: 100%; /* Ensures justification for single lines */
+  width: 100%;  Ensures justification for single lines 
   display: inline-block;
-}
+}*/
 
 .case_study .img_row img{
     width: 49%;
