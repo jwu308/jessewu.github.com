@@ -239,7 +239,6 @@ body {
     margin: -106px 0px 0px -90px; /* 212x height, 180px width */
 }
 
-
 #work .project#money .icon#cash img {
     margin: -64px 0px 0px -90px; /* 129px height, 180px width */
 }
@@ -714,6 +713,12 @@ animation durations:
         margin: -45px 0px 0px -45px; /* 90x height, 90px width */
     }
 
+    #work .project#sentiment .icon#bulb img {
+        width: 90px;
+        height: 106px;
+        margin: -53px 0px 0px -45px; /* 106x height, 90px width */
+    }
+
     #work .project#money .icon#cash img {
         width: 90px;
         height: 64px;
@@ -730,6 +735,12 @@ animation durations:
         width: 90px;
         height: 86px;
         margin: -43px 0px 0px -45px; /* 86px height, 90px width */
+    }
+
+    #work .project#d3 .icon#rocket img {
+        width: 40px;
+        height: 49px;
+        margin: -45px 0px 0px -45px; /* 180px height, 180x width */
     }
 }
 
