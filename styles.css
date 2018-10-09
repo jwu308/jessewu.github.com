@@ -203,6 +203,10 @@ body {
     background: #F2FBCA;
 }
 
+#work .project#sentiment .icon#bulb {
+    background: #F2FBCA;
+}
+
 #work .project#money .icon#cash {
     background: #CEFFDF;
 }
@@ -212,6 +216,10 @@ body {
 }
 
 #work .project#d3 .icon#graph {
+    background: #D0F9FF;
+}
+
+#work .project#d3 .icon#rocket {
     background: #D0F9FF;
 }
 
@@ -227,6 +235,11 @@ body {
     margin: -90px 0px 0px -90px; /* 180x height, 180px width */
 }
 
+#work .project#sentiment .icon#bulb img {
+    margin: -106px 0px 0px -90px; /* 212x height, 180px width */
+}
+
+
 #work .project#money .icon#cash img {
     margin: -64px 0px 0px -90px; /* 129px height, 180px width */
 }
@@ -237,6 +250,10 @@ body {
 
 #work .project#d3 .icon#graph img {
     margin: -95px 0px 0px -78px; /* 190px height, 156px width */
+}
+
+#work .project#d3 .icon#rocket img {
+    margin: -90px 0px 0px -90px; /* 180px height, 180x width */
 }
 
 #contact {
@@ -372,6 +389,10 @@ body {
     background: #F2FBCA;
 }
 
+.case_study .hero .icon#bulb {
+    background: #F2FBCA;
+}
+
 .case_study .hero .icon#cash {
     background: #CEFFDF;
 }
@@ -381,6 +402,10 @@ body {
 }
 
 .case_study .hero .icon#graph {
+    background: #D0F9FF;
+}
+
+.case_study .hero .icon#rocket {
     background: #D0F9FF;
 }
 
@@ -396,6 +421,10 @@ body {
     margin: -90px 0px 0px -90px; /* 180x height, 180px width */
 }
 
+.case_study .hero .icon#bulb img {
+    margin: -106px 0px 0px -90px; /* 212x height, 180px width */
+}
+
 .case_study .hero .icon#cash img {
     margin: -64px 0px 0px -90px; /* 129px height, 180px width */
 }
@@ -406,6 +435,10 @@ body {
 
 .case_study .hero .icon#graph img {
     margin: -95px 0px 0px -78px; /* 190px height, 156px width */
+}
+
+.case_study .hero .icon#rocket img {
+    margin: -90px 0px 0px -90px; /* 180px height, 180x width */
 }
 
 .case_study .title {
@@ -439,6 +472,10 @@ body {
     width: 100%;
     cursor: zoom-in;
     margin-top: 20px;
+}
+
+.case_study .body a {
+    font-weight: bold;
 }
 
 .case_study .body img.prototype {

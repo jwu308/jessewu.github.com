@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        
+        <title>
+            Jesse Wu
+        </title>
+    </head>
+  
+    <body>
+        <div id="wrapper">
+
+            <div id="header">
+                <a href="../index.html#hero" ontouchend="this.onclick=hover_fix"><span id="logo"> JW </span></a>
+
+                <a href="../index.html#work" ontouchend="this.onclick=hover_fix" ><span> Work </span></a>
+                <a href="../index.html#about" ontouchend="this.onclick=hover_fix"><span> About </span></a>
+                <a href="../index.html#contact" ontouchend="this.onclick=hover_fix"><span> Contact </span></a>
+            </div>
+
+            <div class="case_study">
+                <div class="hero" id="sentiment">
+                    <div class="icon" id="bulb">
+                        <img src="../img/bulb.svg" />
+                    </div>
+                </div>
+
+                <span class="title">Always Learning</span>
+                <br>
+                <span class="subtitle">Helping MongoDB University students keep track of their course progress.</span>
+                <br>
+                <span class='heading'>Problem</span>
+                <span class='body'>For each course in MongoDB University, there are syllabus and progress pages. The syllabus page shows a list of the chapter sections that make up the course, and the progress page shows students their current grades in the course.
+                <br><br>
+                    <img src='../img/learning/existing_syllabus.jpeg' />
+                <br>
+                    <img src='../img/learning/existing_progress.jpeg' />
+                <br><br>
+                However, the MongoDB University team had been receiving questions and complaints regarding  these pages from users in the community. For example, many users often submitted reports regarding their confusion about the grading policy, their current progress in the course, homework deadlines, and more.
+                <br><br>
+                As a result, I was asked to investigate these usability issues with the syllabus and progress pages and create newly redesigned experiences to address the users' problems.
+                </span>
+                <span class='heading'>Design Process</span>
+                <span class='body'>
+                    <img src='../img/learning/design_process.svg' />
+                </span>
+                <span class='heading'>Research</span>
+                <span class='body'>To learn more about how users currently interact with the syllabus and progress pages and empathize with their paint points, needs, and goals when taking a MongoDB University course, two research methods were conducted: interviews and card sorting. 
+                <br><br>
+                For the interviews, 11 users were asked a variety of open-ended questions about the context in which they complete MongoDB courses, their goals when taking courses, and issues with interacting with the syllabus and progress pages. These users primarily consisted of data administrators and developers.
+                <br><br>
+                After the user research was conducted and the results were synthesized, the main research insights were:
+                <br><br>
+                <ul>
+                    <li>In the beginning of a course, users would like to understand an overview of the course material as well as the time commitment needed to complete the course</li>
+                    <li>During the middle of a course, users would like to easily access homework assignments, understand their progress in terms of lessons left to complete, and know their current grades</li>
+                    <li>At the end of a course, users would like to understand their performance and access further resources to address areas of weakness and related areas of study</li>
+                </ul>
+                </span>
+                <span class='heading'>Ideation and Early Design</span>
+                <span class='body'>Based on the user research insights, several primary user tasks were determined:
+                <br><br>
+                <ul>
+                    <li>Browse an overview of the course's material and chapter structure</li>
+                    <li>Access homework assignments</li>
+                    <li>Keep track the amount of completed work and incomplete work</li>
+                    <li>Understand their grades</li>
+                    <li>Refer to additional resources to improve areas of weakness or learn more about the course</li>
+                </ul>
+                <br>
+                Before jumping into sketching out interface details in wireframes, the overall primary user tasks were determined to understand how the sign-up page would function at a high level. The user tasks were:
+                <br><br>
+                <ul>
+                    <li>Sign-up</li>
+                    <li>Sign-in</li>
+                    <li>Recover password</li>
+                    <li>Switch from sign-up to sign-in, or vice versa</li>
+                </ul>
+                <br>
+                To design an experience that enabled users to complete the multitude of user tasks, the tasks were organized Into three task categories: chapter organization, grades, and progress of completion.
+                <br><br>
+                Next, UI designs were ideated via sketching for each of the categories resulting in several components and component layouts. To determine which UI designs to move forward with, several factors were considered: how well do the UI designs address the user tasks, and how well do the designs synergize with the designs of the other task categories?
+                <div class="img_row">
+                    <img src="../img/learning/ideation2.jpeg" />
+                    <img src="../img/learning/ideation3.jpeg" />
+                </div>
+                <br><br>
+                Based on the design factors mentioned above, the individual UI designs for each task category were weaved together into a coherent wireframe sketch. The top section shows a description of the course as well an overview of the students' progress and grades. Below, the user can see a breakdown of the chapters they're currently working as well as the ones they finished and yet to finish. The ones they are working on are placed towards the top so that users can see them first.
+                <br><br>
+                    <img src='../img/learning/wireframe.jpeg' />
+                <br><br>
+                Also, the syllabus and progress pages were combined into a single page. This rationale behind this design decision was that many of the requested user tasks were similar to one another and could thus accomplished in a unified, hybrid design layout with included elements from both former pages.
+                </span>
+                <span class='heading'>Internal Evaluation</span>
+                <span class='body'>After creating initial wireframes for the design, peer review and a design critique were conducted with internal team members to gather input on the wireframe designs. For each these evaluation methods, the user tasks were introduced, and explanations were given regarding how the user tasks could be completed through the wireframe design.
+                <br><br>
+                The main pieces of feedback were:
+                <br><br>
+                <ul>
+                    <li>Given engineering constraint of an additive grading system, in which grades start at 0% and increase towards 100%, seemed discouraging</li>
+                    <li>Percentage grades for each chapter does not show weighted grade values; i.e., a chapter with more homework should be weighted more heavily</li>
+                    <li>Expanded chapter content would be too extensive in most realistic cases and would thus make the dropdown interfaces very long</li>
+                </ul>
+                </span>
+                <span class='heading'>Updated Design</span>
+                <span class='body'>Based on the feedback from the internal evaluation sessions, several changes were made to the wireframe design. Also, due to project timeline constraints, the wireframes were promptly moved forwards towards high-fidelity design using the MongoDB University design system. 
+                <br><br>
+                The updated design changes that were implemented were:
+                <br><br>
+                <ul>
+                    <li>Replaced the overall grade percentage with a data visualization that showed grading category breakdowns, which was homework as 50% and the exam as 50%</li>
+                    <li>Replaced the chapter grade percentages with correct and incorrect badges to show the graded weight; i.e.. more badges for a chapter means more impact on the overall grade</li>
+                    <li>Removed the accordion dropdown and changed the interaction of clicking on a chapter to navigating to the course page itself, which already shows an outline of the chapter</li>
+                </ul>
+                <br>
+                Next, the mockups were connected together to create <a target="_blank" href="https://mongodb.invisionapp.com/share/5AN4DGQNFKS#/screens">an Invision prototype, which can be accessed here.</a>
+                <br><br>
+                    <img src='../img/learning/mockup_circle.jpeg' />
+                <br><br>
+                </span>
+                <span class='heading'>External Evaluation</span>
+                <span class='body'>
+                After the prototype was created, user testing was conducted to determine whether users would be able to the user tasks and gather any other input they may have, such as whether the user tasks accurately reflect their needs and goals. The methods used were: 
+                <br><br>
+                <ul>
+                    <li>Think aloud task walkthrough</li>
+                    <li>Follow-up interviews</li>
+                </ul>
+                <br>
+                Users were given a scenario as context and then asked to perform tasks in the prototype based on the scenario. An example of a task scenario was having the user imagine that they have a busy schedule and then asking them to try to determine the amount of coursework they need to finish by a certain deadline. After each of these tasks, users were asked follow-up questions about their decision making.
+                <br><br>
+                After conducting user tests on 11 external users, who consisted of both database administrators and developers, the results were analyzed, and the main user testing insights were:
+                <br><br>
+                <ul>
+                    <li>Users could tell what the course was about, but would still like a brief written description of the course instead of having to look at the chapter titles</li>
+                    <li>Users had trouble determining how long the course would last for</li>
+                    <li>About half of the users understood the overall grade visualization, while half of the users did not</li>
+                    <li>Users liked the badge visualization for graded lessons because they clearly display the outcome of a lesson as well as more contextual information upon hovering</li>
+                    <li>Users wanted to see a recommendation of next steps to take after completing a course, such as taking another related course or reading documentation related to the course</li>
+                </ul>
+                </span>
+                <span class='heading'>Updated Design</span>
+                <span class='body'>
+                Based on the user testing results, several design iterations were made: 
+                <br><br>
+                <ul>
+                    <li>Added a course description to the top overview section so that users can read a brief summary of the course's content</li>
+                    <li>Added course duration information to the overview section so users can determine the time commitment for the course without having to read through each chapter's dates</li>
+                    <li>Replaced semi-circle grade visualization with a bar chart, which features clear titles for each bar which represents grading categories, such as homework or exam</li>
+                    <li>Unified the tooltip styles under a commonly used tooltip style from the MongoDB design system</li>
+                    <li>Added recommendations for similar courses and related readings for after users have completed the course</li>
+                </ul>
+                <br><br>
+                    <img src='../img/learning/mockup_bars_middle.png' />
+                <br>
+                    <img src='../img/learning/mockup_bars_end.png' />
+                <br>
+                </span>
+                <span class='heading'>Next Steps</span>
+                <span class='body'>
+                The updated designs are currently undergoing further final user testing. The implementation of the final design deliverables are tentatively scheduled to be finished by Q1 2019. Meanwhile, <a href="https://mongodb.invisionapp.com/share/7ENG88FBCZP" target="_blank">the latest Invision prototype of the updated design can be found here.</a>
+                </span>
+            </div>
+
+            <div id="project_nav">
+                <a href="signup.html">
+                    <span class="previous">Previous
+                        <br>
+                        <span class="title">3, 2, 1, Blast Off!</span>
+                    </span>
+                </a>
+                <a href="pocketdoc.html">
+                    <span class="next">Next
+                        <br>
+                        <span class="title">What's Up, Doc?</span>
+                    </span>
+                </a>
+            </div>
+
+            <div id="footer">
+                <a href="mailto:jwu308@gatech.edu"><span id="email"> <b>Email</b> </span></a>
+
+                <a href="../document/WuJesse_Resume.pdf"><span> Resume </span></a>
+                <a href="https://www.linkedin.com/in/jesse-wu-065820126/"><span> LinkedIn </span></a>
+                <a href="https://dribbble.com/jessesse"><span> Dribbble </span></a>
+
+                <!-- <span id="credits"> Website by Jesse Wu </span> -->
+            </div>
+        </div>
+
+        <div id="loading">
+            <div class="icon_row">
+                <div class="icon" id="smiley">
+                    <img src="../img/smiley.svg" />
+                </div>
+                <div class="icon" id="slice">
+                    <img src="../img/slice.svg" />
+                </div>
+                <div class="icon" id="cash">
+                    <img src="../img/cash.svg" />
+                </div>
+                <div class="icon" id="graph">
+                    <img src="../img/flask.svg" />
+                </div>
+            </div>
+        </div> 
+    </body>
+
+    <script>
+        function hover_fix()
+        {
+            var el = this;
+            var par = el.parentNode;
+            var next = el.nextSibling;
+            par.removeChild(el);
+            setTimeout(function() {par.insertBefore(el, next);}, 0)
+        }
+
+        function explain_rating()
+        {
+            document.getElementById("rating_explanation").innerHTML = "The sentiment rating system ranged from -1 to 1, where a rating of -1 represents the most negative sentiment, 0 represents neutral sentiment, and 1 represents the most positive sentiment. This scale was chosen over a tradition 0 to 10 or 0 to 100 scale due to its ability to convey sentiment scores more intuitively. <br><br> In a 0 to 100 scale, high scores are typically interpreted as good and low scores (typically perceived as below 70) as bad. Under this system, a score of 50 or 50% implies a poor score. However, for sentiment rating, 50 would actually mean that the score was perfectly neutral; people have no strong feelings in either direction. As a result, the -1 to 1 range was chosen to minimize misconceptions and support the idea that 0 represents an origin point that aligns with neutral sentiment.";
+        }
+
+        function disappear(id)
+        {
+            document.querySelector(".overlay" + "#" + id).style.display = "none";
+            document.querySelector("body").style.overflow = "auto";
+            document.querySelector(".case_study .body img ").style.cursor = "zoom-in";
+        }
+
+        function summon(id)
+        {
+            document.querySelector(".overlay" + "#" + id).style.display = "block";
+            document.querySelector("body").style.overflow = "hidden";
+            document.querySelector(".case_study .body img ").style.cursor = "zoom-out";
+        }
+
+        setTimeout(function() {
+            document.getElementById("loading").style.display = "none";
+        }, 1700);
+    </script>
+
+</html>
