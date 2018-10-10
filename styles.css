@@ -738,9 +738,9 @@ animation durations:
     }
 
     #work .project#d3 .icon#rocket img {
-        width: 40px;
-        height: 49px;
-        margin: -45px 0px 0px -45px; /* 180px height, 180x width */
+        width: 90px;
+        height: 90px;
+        margin: -45px 0px 0px -45px; /* 90px height, 90x width */
     }
 }
 
