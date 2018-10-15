@@ -448,6 +448,8 @@ body {
 }
 
 .case_study .subtitle {
+	display: inline-block;
+	margin-top: 10px;
     font-size: 24px;
 }
 
@@ -473,8 +475,8 @@ body {
     margin-top: 20px;
 }
 
-.case_study .body a {
-    font-weight: bold;
+.case_study .body img.shadow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .case_study .body img.prototype {
@@ -482,6 +484,20 @@ body {
     width: 223px;
     margin: 20px auto 0px auto;
     cursor: pointer;
+}
+
+.case_study .body a:link {
+    font-weight: bold;
+    color: rgb(74, 74, 74);
+}
+
+.case_study .body a:visited {
+	font-weight: bold;
+    color: rgb(74, 74, 74);
+}
+
+.case_study span.body {
+	line-height: 30px;
 }
 
 .case_study #rating_explanation {
