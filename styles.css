@@ -22,6 +22,7 @@ body {
     height: 32px;
     margin: 0px auto;
     padding: 20px 0px 10px 0px;
+    border-radius: 5px;
 
     background: white;
 
@@ -461,7 +462,7 @@ body {
 }
 
 .case_study .body {
-    display: inline-block;
+    display: block;
     margin-top: 10px;
 }
 
@@ -471,7 +472,7 @@ body {
 
 .case_study .body img {
     width: 100%;
-    cursor: zoom-in;
+    /*cursor: zoom-in;*/
     margin-top: 20px;
 }
 
