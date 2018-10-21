@@ -3,7 +3,16 @@
     <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
     <title>Home Copy 5</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="1.03639812%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0.284501445%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
     <g id="Home-Copy-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect fill="#FFFFFF" x="0" y="0" width="1440" height="614"></rect>
         <g id="Group-2" transform="translate(-25.000000, 0.000000)">
@@ -14,7 +23,7 @@
                 <rect id="Rectangle-10-Copy-7" fill="#FFE8CE" transform="translate(47.999119, 251.169119) rotate(80.000000) translate(-47.999119, -251.169119) " x="27.9991186" y="231.169119" width="40" height="40" rx="10"></rect>
                 <rect id="Rectangle-10-Copy-10" fill="#FFE8CE" transform="translate(112.169119, 153.169119) rotate(80.000000) translate(-112.169119, -153.169119) " x="92.1691186" y="133.169119" width="40" height="40" rx="10"></rect>
                 <rect id="Rectangle-10-Copy-3" fill="#CEFFDF" transform="translate(48.006641, 101.176641) rotate(40.000000) translate(-48.006641, -101.176641) " x="28.0066411" y="81.1766411" width="40" height="40" rx="10"></rect>
-                <rect id="Rectangle-10-Copy-14" fill="#CEFFDF" transform="translate(127.176641, 214.176641) rotate(40.000000) translate(-127.176641, -214.176641) " x="107.176641" y="194.176641" width="40" height="40" rx="10"></rect>
+                <rect id="Rectangle-10-Copy-14" fill="#D0F9FF" transform="translate(127.176641, 214.176641) rotate(40.000000) translate(-127.176641, -214.176641) " x="107.176641" y="194.176641" width="40" height="40" rx="10"></rect>
                 <rect id="Rectangle-10-Copy-5" fill="#D0F9FF" transform="translate(68.465137, 25.634255) rotate(20.000000) translate(-68.465137, -25.634255) " x="48.4651367" y="5.63425528" width="40" height="40" rx="10"></rect>
                 <rect id="Rectangle-10-Copy" fill="#F2FBCA" transform="translate(32.670508, 487.320508) rotate(60.000000) translate(-32.670508, -487.320508) " x="12.6705081" y="467.320508" width="40" height="40" rx="10"></rect>
                 <rect id="Rectangle-10-Copy-8" fill="#FFE8CE" transform="translate(42.522618, 562.169119) rotate(80.000000) translate(-42.522618, -562.169119) " x="22.5226183" y="542.169119" width="40" height="40" rx="10"></rect>
@@ -31,7 +40,7 @@
                 <rect id="Rectangle-10-Copy-7" fill="#FFE8CE" transform="translate(47.999119, 251.169119) rotate(80.000000) translate(-47.999119, -251.169119) " x="27.9991186" y="231.169119" width="40" height="40" rx="10"></rect>
                 <rect id="Rectangle-10-Copy-10" fill="#FFE8CE" transform="translate(112.169119, 153.169119) rotate(80.000000) translate(-112.169119, -153.169119) " x="92.1691186" y="133.169119" width="40" height="40" rx="10"></rect>
                 <rect id="Rectangle-10-Copy-3" fill="#CEFFDF" transform="translate(48.006641, 101.176641) rotate(40.000000) translate(-48.006641, -101.176641) " x="28.0066411" y="81.1766411" width="40" height="40" rx="10"></rect>
-                <rect id="Rectangle-10-Copy-14" fill="#CEFFDF" transform="translate(127.176641, 214.176641) rotate(40.000000) translate(-127.176641, -214.176641) " x="107.176641" y="194.176641" width="40" height="40" rx="10"></rect>
+                <rect id="Rectangle-10-Copy-14" fill="#D0F9FF" transform="translate(127.176641, 214.176641) rotate(40.000000) translate(-127.176641, -214.176641) " x="107.176641" y="194.176641" width="40" height="40" rx="10"></rect>
                 <rect id="Rectangle-10-Copy-5" fill="#D0F9FF" transform="translate(68.465137, 25.634255) rotate(20.000000) translate(-68.465137, -25.634255) " x="48.4651367" y="5.63425528" width="40" height="40" rx="10"></rect>
                 <rect id="Rectangle-10-Copy" fill="#F2FBCA" transform="translate(32.670508, 487.320508) rotate(60.000000) translate(-32.670508, -487.320508) " x="12.6705081" y="467.320508" width="40" height="40" rx="10"></rect>
                 <rect id="Rectangle-10-Copy-8" fill="#FFE8CE" transform="translate(42.522618, 562.169119) rotate(80.000000) translate(-42.522618, -562.169119) " x="22.5226183" y="542.169119" width="40" height="40" rx="10"></rect>
@@ -42,5 +51,7 @@
                 <rect id="Rectangle-10-Copy-9" fill="#D0F9FF" transform="translate(101.634255, 465.634255) rotate(20.000000) translate(-101.634255, -465.634255) " x="81.6342553" y="445.634255" width="40" height="40" rx="10"></rect>
             </g>
         </g>
+        <rect id="Rectangle-15" fill="url(#linearGradient-1)" x="1313" y="0" width="127" height="614"></rect>
+        <rect id="Rectangle-15-Copy" fill="url(#linearGradient-2)" transform="translate(63.500000, 307.000000) scale(-1, 1) translate(-63.500000, -307.000000) " x="0" y="0" width="127" height="614"></rect>
     </g>
 </svg>
