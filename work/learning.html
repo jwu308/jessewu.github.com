@@ -41,9 +41,15 @@
                 <br>
                     <img class='shadow' src='../img/learning/existing_progress.jpeg' />
                 <br><br>
-                However, the MongoDB University team had been receiving questions and complaints regarding  these pages from users in the community. For example, many users often submitted reports regarding their confusion about the grading policy, their current progress in the course, homework deadlines, and more.
+                However, the MongoDB University team had been receiving questions and complaints regarding  these pages from users in the community. For example, many users often submitted reports regarding their confusion about:
                 <br><br>
-                As a result, I was asked to investigate these usability issues with the syllabus and progress pages and create newly redesigned experiences to address the users' problems.
+                <ul>
+                    <li>Grading policy</li>
+                    <li>Current progress in the course</li>
+                    <li>Homework deadlines</li>
+                    <li>Countless other issues</li>
+                </ul>
+                <br>I was asked to investigate these usability issues with the syllabus and progress pages and design newly redesigned experiences to address the users' problems.
                 </span>
                 <span class='heading'>Logistics</span>
                 <span class='body'>
@@ -59,10 +65,23 @@
                     <img src='../img/learning/design_process.svg' />
                 </span>
                 <span class='heading'>Research</span>
-                <span class='body'>To learn more about how users currently interact with the syllabus and progress pages and empathize with their paint points, needs, and goals when taking a MongoDB University course, two research methods were conducted: interviews and card sorting. 
+                <span class='body'>To learn more about how users currently interact with the syllabus and progress pages and empathize with their paint points, needs, and goals when taking a MongoDB University course, two research methods were conducted: 
                 <br><br>
+                <ul>
+                    <li>Interviews</li>
+                    <li>Card Sorting</li>
+                </ul>
+                <br>
                 For the interviews, 11 users were asked a variety of open-ended questions about the context in which they complete MongoDB courses, their goals when taking courses, and issues with interacting with the syllabus and progress pages. These users primarily consisted of data administrators and developers.
                 <br><br>
+                For the card sorting activity, key pieces of information about courses, such as chapter titles, chapter start dates, and homework grades, were written on cards. The same 11 users were asked to organize these cards in order of important to them through three phases of taking a course: 
+                <br><br>
+                <ul>
+                    <li>Browsing a course initially</li>
+                    <li>Completing course work during the course</li>
+                    <li>Evaluating results after the course has finished</li>
+                </ul>
+                <br>
                 After the user research was conducted and the results were synthesized, the main research insights were:
                 <br><br>
                 <ul>
@@ -91,22 +110,42 @@
                     <li>Switch from sign-up to sign-in, or vice versa</li>
                 </ul>
                 <br>
-                To design an experience that enabled users to complete the multitude of user tasks, the tasks were organized Into three task categories: chapter organization, grades, and progress of completion.
+                To design an experience that enabled users to complete the multitude of user tasks, the tasks were organized into three task categories:
                 <br><br>
-                Next, UI designs were ideated via sketching for each of the categories resulting in several components and component layouts. To determine which UI designs to move forward with, several factors were considered: how well do the UI designs address the user tasks, and how well do the designs synergize with the designs of the other task categories?
+                <ul>
+                    <li>Chapter organization</li> 
+                    <li>Grades</li>
+                    <li>Progress of completion</li>
+                </ul>
+                <br>
+                Next, UI designs were ideated via sketching for each of the categories resulting in several components and component layouts. 
+                <br><br>
+                To determine which UI designs to move forward with, several factors were considered: 
+                <br><br>
+                <ul>
+                    <li>How well do the UI designs address the user tasks?</li> 
+                    <li>How well do the designs synergize with the designs of the other task categories?</li>
+                </ul>
+                <br>
                 <div class="img_row">
                     <img src="../img/learning/ideation2.jpg" />
                     <img src="../img/learning/ideation1.jpg" />
                 </div>
                 <br><br>
-                Based on the design factors mentioned above, the individual UI designs for each task category were weaved together into a coherent wireframe sketch. The top section shows a description of the course as well an overview of the students' progress and grades. Below, the user can see a breakdown of the chapters they're currently working as well as the ones they finished and yet to finish. The ones they are working on are placed towards the top so that users can see them first.
+                Based on the design factors mentioned above, the individual UI designs for each task category were weaved together into a coherent wireframe sketch. 
                 <br><br>
                     <img src='../img/learning/wireframe.jpeg' />
                 <br><br>
-                Also, the syllabus and progress pages were combined into a single page. This rationale behind this design decision was that many of the requested user tasks were similar to one another and could thus accomplished in a unified, hybrid design layout with included elements from both former pages.
+                The top section shows a description of the course as well an overview of the students' progress and grades.
+                <br><br>
+                The user can also see a breakdown of the chapters they're currently working as well as the ones they finished and yet to finish. The ones they are working on are placed towards the top so that users can see them first.
+                <br><br>
+                The syllabus and progress pages were also combined into a single page. The rationale behind this design decision was that many of the requested user tasks were similar to one another and could thus accomplished in a unified, hybrid design layout with included elements from both former pages.
                 </span>
                 <span class='heading'>Peer Review and Design Critique</span>
-                <span class='body'>After creating initial wireframes for the design, peer review and a design critique were conducted with internal team members to gather input on the wireframe designs. For each these evaluation methods, the user tasks were introduced, and explanations were given regarding how the user tasks could be completed through the wireframe design.
+                <span class='body'>After creating initial wireframes for the design, a peer review and design critique were conducted with internal team members to gather input on the wireframe designs. 
+                <br><br>
+                For each these evaluation methods, the user tasks were introduced, and explanations were given regarding how the user tasks could be completed through the wireframe design.
                 <br><br>
                 The main pieces of feedback were:
                 <br><br>
@@ -117,8 +156,10 @@
                 </ul>
                 </span>
                 <span class='heading'>Updated Design</span>
-                <span class='body'>Based on the feedback from the internal evaluation sessions, several changes were made to the wireframe design. Also, due to project timeline constraints, the wireframes were promptly moved forwards towards high-fidelity design using the MongoDB University design system. 
+                <span class='body'>Based on the feedback from the internal evaluation sessions, several changes were made to the wireframe design.
                 <br><br>
+                <!-- The wireframes were promptly moved forwards towards high-fidelity design using the MongoDB University design system due to project timeline constraints. 
+                <br><br> -->
                 The updated design changes that were implemented were:
                 <br><br>
                 <ul>
@@ -134,16 +175,27 @@
                 </span>
                 <span class='heading'>User Testing</span>
                 <span class='body'>
-                After the prototype was created, user testing was conducted to determine whether users would be able to the user tasks and gather any other input they may have, such as whether the user tasks accurately reflect their needs and goals. The methods used were: 
+                After the prototype was created, user testing was conducted to:
+                <br><br>
+                <ul>
+                    <li>Determine whether users would be able to complete the user tasks</li>
+                    <li>Gather any other input they may have, such as whether the user tasks accurately reflect their needs and goals</li>
+                </ul>
+                <br>
+                The user testing methods used included: 
                 <br><br>
                 <ul>
                     <li>Think aloud task walkthrough</li>
                     <li>Follow-up interviews</li>
                 </ul>
                 <br>
-                Users were given a scenario as context and then asked to perform tasks in the prototype based on the scenario. An example of a task scenario was having the user imagine that they have a busy schedule and then asking them to try to determine the amount of coursework they need to finish by a certain deadline. After each of these tasks, users were asked follow-up questions about their decision making.
+                Users were given a scenario as context and then asked to perform tasks in the prototype based on the scenario.
                 <br><br>
-                After conducting user tests on 11 external users, who consisted of both database administrators and developers, the results were analyzed, and the main user testing insights were:
+                An example of a task scenario was having the user imagine that they have a busy schedule and then asking them to try to determine the amount of coursework they need to finish by a certain deadline.
+                <br><br>
+                After each of these tasks, users were asked follow-up questions about their decision making.
+                <br><br>
+                A total of 11 user tests were conducted on external users, who consisted of both database administrators and developers. The results were analyzed, and the main user testing insights were:
                 <br><br>
                 <ul>
                     <li>Users could tell what the course was about, but would still like a brief written description of the course instead of having to look at the chapter titles</li>
@@ -172,7 +224,11 @@
                 </span>
                 <span class='heading'>Next Steps</span>
                 <span class='body'>
-                The updated designs are currently undergoing further final user testing. The implementation of the final design deliverables are tentatively scheduled to be finished by Q1 2019. Meanwhile, <a href="https://mongodb.invisionapp.com/share/7ENG88FBCZP" target="_blank">the latest Invision prototype of the updated design can be found here.</a>
+                The updated designs were well-received by the MongoDB University and the MongoDB design team.
+                <br><br>
+                However, the designs are currently undergoing further final user testing. The implementation of the final design deliverables are tentatively scheduled to be finished by Q1 2019. 
+                <br><br>
+                Meanwhile, <a href="https://mongodb.invisionapp.com/share/7ENG88FBCZP" target="_blank">the latest Invision prototype of the updated design can be found here.</a>
                 </span>
             </div>
 
