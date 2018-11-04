@@ -2,16 +2,15 @@ body {
     box-sizing: border-box;
 
     font-size: 20px;
-    color: rgb(74, 74, 74);
+    color: rgb(85, 93, 109);
     font-family: 'Roboto', sans-serif;
-
-    background-image: url("img/portfolio_background_blur.svg");
-    background-repeat: repeat-y;
+    /*background-image: url("img/portfolio_background_top.svg");*/
+    background-repeat: no-repeat;
     background-size: contain;
 }
 
 #wrapper {
-	max-width: 670px;
+	max-width: 800px;
     margin: 20px auto;
 }
 
@@ -22,7 +21,7 @@ body {
     left: 0;
     right: 0;
 
-    max-width: 672px;
+    max-width: 802px;
     height: 32px;
     margin: 0px auto;
     padding: 20px 0px 10px 0px;
@@ -64,6 +63,11 @@ body {
     width: 100%;
 }
 
+#hero span#name {
+	font-size: 24px;
+}
+
+
 #about {
     margin-top: 100px;
     padding-top: 50px;
@@ -89,7 +93,7 @@ body {
 }
 
 #work a {
-    color: rgb(74, 74, 74);
+    color: rgb(85, 93, 109);
     text-decoration: none;
 }
 
@@ -164,7 +168,7 @@ body {
 }
 
 #work .project .title {
-    width: 288px; /* 288px when above; 250px when below query */
+    width: 400px; /* 288px when above; 250px when below query */
     font-size: 36px;
     font-weight: bold;
 }
@@ -177,7 +181,7 @@ body {
     position: absolute;
     bottom: var(--padding);
     left: var(--padding);
-    width: 288px; /* 288px when above; 250px when below query */
+    width: 400px; /* 288px when above; 250px when below query */
 }
 
 #work .project .icon { /* disappear when hit text */
@@ -280,7 +284,7 @@ body {
 }
 
 #contact a {
-    color: rgb(74, 74, 74);
+    color: rgb(85, 93, 109);
     text-decoration: none;
 }
 
@@ -299,7 +303,7 @@ body {
 }
 
 #footer a {
-    color: rgb(74, 74, 74);
+    color: rgb(85, 93, 109);
     text-decoration: none;
 }
 
@@ -450,6 +454,7 @@ body {
     margin: 60px 0px 0px 0px;
     font-size: 36px;
     font-weight: bold;
+    color: rgb(85, 93, 109);
 }
 
 .case_study .subtitle {
@@ -463,11 +468,12 @@ body {
     margin: 40px 0px 0px 0px;
     font-size: 24px;
     font-weight: bold;
+    color: rgb(85, 93, 109);
 }
 
 .case_study .body {
     display: block;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .case_study ul {
@@ -493,12 +499,12 @@ body {
 
 .case_study .body a:link {
     font-weight: bold;
-    color: rgb(74, 74, 74);
+    color: rgb(85, 93, 109);
 }
 
 .case_study .body a:visited {
 	font-weight: bold;
-    color: rgb(74, 74, 74);
+    color: rgb(85, 93, 109);
 }
 
 .case_study span.body {
@@ -546,7 +552,7 @@ body {
 }
 
 #project_nav a {
-    color: rgb(74, 74, 74);
+    color: rgb(85, 93, 109);
     text-decoration: none;
 }
 
@@ -711,12 +717,6 @@ animation durations:
     }
 }
 
-@media screen and (max-width: 900px) {
-    body {
-        background-image: none;
-    }
-}
-
 @media screen and (max-width: 700px) {
 
     #work .project .icon {
@@ -770,6 +770,10 @@ animation durations:
         width: 90px;
         height: 90px;
         margin: -45px 0px 0px -45px; /* 90px height, 90x width */
+    }
+
+    #work .project .description {
+        width: 340px;
     }
 }
 
