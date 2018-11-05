@@ -99,7 +99,7 @@
                 <br>
                 After the task flow was determined, wireframes and mockups that represented steps of the user flow were created in Sketch.
                 <br><br>
-                <span id="rating_explanation" onclick="explain_rating()""><i>Click to learn more about the sentiment rating system.</i></span>
+                <span id="rating_explanation" onclick="explain_rating()">Click to learn more about the sentiment rating system.</span>
                 <img id="sketch" onclick="summon(this.id)" src="../img/Sentiment/Sketch.jpg" />
                 <div class="img_row">
                     <img id="early_wireframe_menu" onclick="summon(this.id)" src="../img/Sentiment/early_wireframe_menu.png" />
@@ -289,6 +289,10 @@
         function explain_rating()
         {
             document.getElementById("rating_explanation").innerHTML = "The sentiment rating system ranged from -1 to 1, where a rating of -1 represents the most negative sentiment, 0 represents neutral sentiment, and 1 represents the most positive sentiment. This scale was chosen over a tradition 0 to 10 or 0 to 100 scale due to its ability to convey sentiment scores more intuitively. <br><br> In a 0 to 100 scale, high scores are typically interpreted as good and low scores (typically perceived as below 70) as bad. Under this system, a score of 50 or 50% implies a poor score. However, for sentiment rating, 50 would actually mean that the score was perfectly neutral; people have no strong feelings in either direction. As a result, the -1 to 1 range was chosen to minimize misconceptions and support the idea that 0 represents an origin point that aligns with neutral sentiment.";
+            document.getElementById("rating_explanation").style.backgroundColor = "white";
+            document.getElementById("rating_explanation").style.fontStyle = "normal";
+            document.getElementById("rating_explanation").style.fontWeight = "200";
+            document.getElementById("rating_explanation").style.cursor = "default";
         }
 
         function disappear(id)

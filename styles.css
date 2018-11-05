@@ -80,7 +80,7 @@ body {
 
 
 #work {
-    margin-top: 90px;
+    margin: 90px 0px;
 }
 
 #work a {
@@ -254,12 +254,6 @@ body {
     width: 100%;
 }
 
-
-
-#footer {
-    margin-top: 90px;
-}
-
 #footer .divider.long {
     height: 1px;
     width: 100%;
@@ -277,7 +271,6 @@ body {
 
 #footer a {
     margin-right: 15px;
-    margin-left: 5px;
 }
 
 #footer .credit {
@@ -471,7 +464,7 @@ body {
 }
 
 .case_study .body a:visited {
-	ont-weight: 400;
+	font-weight: 400;
     text-decoration: none;
     font-style: italic;
     color: rgb(85, 93, 109);
@@ -494,6 +487,15 @@ body {
 
 .case_study #rating_explanation {
     cursor: pointer;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(85, 93, 109);
+    background-color: rgb(240, 240, 240);
+}
+
+.case_study #rating_explanation:hover {
+    background-color: rgb(220, 220, 220);
 }
 
 .case_study .img_row {
@@ -512,7 +514,8 @@ body {
 }
 
 #project_nav {
-    margin-top: 100px;
+    margin-top: 60px;
+    margin-bottom: 30px;
     overflow: auto;
 }
 
@@ -521,6 +524,11 @@ body {
     float: left;
     font-weight: 200;
     font-size: 18px;
+    transition: all 0.25s;
+}
+
+#project_nav .previous:hover {
+    transform: translate(5px, 0px);
 }
 
 #project_nav .next {
@@ -528,6 +536,11 @@ body {
     float: right;
     font-weight: 200;
     font-size: 18px;
+    transition: all 0.25s;
+}
+
+#project_nav .next:hover {
+    transform: translate(-5px, 0px);
 }
 
 #project_nav .title {
@@ -843,8 +856,8 @@ animation durations:
         margin-top: 15px;
     }
 
-    #footer span {
-        margin-left: 4px;
+    #footer a {
+        margin-right: 5px;
     }
 
     #project_nav .previous {
@@ -908,12 +921,8 @@ animation durations:
         text-align: center;
     }
 
-    #footer span {
-        display: block;
-        margin: 10px 0px;
-    }
-
-    #footer span#email {
+    #footer .credit {
+        margin-top: 5px;
         float: none;
     }
 }
