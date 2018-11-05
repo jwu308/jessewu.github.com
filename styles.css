@@ -124,8 +124,8 @@ body {
 }
 
 #work .project .subtitle {
-    color: #888888;
-    /*color: #4A90E2;*/
+    /*color: #888888;*/
+    color: #4A90E2;
     font-weight: 200;
     font-size: 18px;
 
@@ -486,6 +486,10 @@ body {
 	line-height: 27px;
     font-size: 18px;
     font-weight: 200;
+}
+
+.case_study span.body ul li span.header {
+    font-weight: 400;
 }
 
 .case_study #rating_explanation {
