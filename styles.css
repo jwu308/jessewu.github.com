@@ -12,33 +12,31 @@ body {
 #wrapper {
 	max-width: 800px;
     margin: 20px auto;
+    padding: 10px;
 }
 
 #header {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-
-    max-width: 802px;
-    height: 32px;
-    margin: 0px auto;
-    padding: 20px 0px 10px 0px;
-    border-radius: 5px;
-
-    background: white;
-
-    text-align: right;
+    margin-top: 30px;
 }
 
 #header a {
-    color: rgb(74, 74, 74);
+    color: rgb(85, 93, 109);
     text-decoration: none;
+    font-weight: 200;
+    font-size: 18px;
+    display: inline-block;
+    transition: all .25s;
+}
+
+#header a img {
+    margin-right: 15px;
+    margin-bottom: -3px;
 }
 
 #header a:hover {
     cursor: pointer;
+    transform: translate(-10px, 0px);
+    color: rgb(85, 93, 109);
 }
 
 #header span {
@@ -54,42 +52,35 @@ body {
 }
 
 #hero {
-    margin-top: 20px;
-    padding-top: 100px;
-    text-align: right;
+    margin-top: 180px;
 }
 
-#hero img {
-    width: 100%;
+#hero .description {
+    color: #888888;
+    font-weight: 200;
+    line-height: 30px;
 }
 
-#hero span#name {
-	font-size: 24px;
+#hero .description span.emphasis {
+    color: #4A90E2;
 }
 
-
-#about {
-    margin-top: 100px;
-    padding-top: 50px;
+#hero .title {
+    font-size: 72px;
+    font-weight: bold;
+    color: #333333;
 }
 
-#about .section {
-    margin-top: 50px;
+#hero .divider.short {
+    height: 1px;
+    width: 100px;
+    background-color: #E6E6E6;
+    margin: 30px 0px;
 }
 
-#about .section .keyword {
-    font-family: 'Lobster', cursive;
-    font-size: 36px;
-}
-
-#about .section .description {
-    width: 80%;
-    float: right;
-}
 
 #work {
-    margin-top: 100px;
-    padding-top: 50px;
+    margin-top: 90px;
 }
 
 #work a {
@@ -100,7 +91,7 @@ body {
 #work .project {
     position: relative;
 
-    margin-top: 50px;
+    margin-top: 60px;
 
     width: calc(100% - var(--padding) * 2);
     height: calc(340px - var(--padding) * 2);
@@ -111,57 +102,14 @@ body {
     padding: var(--padding);
 
     transition: 0.25s;
+
+    border: 1px solid #EFEFEF;
 }
 
 #work .project:hover {
     cursor: pointer;
-    transform: scale(1.15);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
 }
-
-#work .bonus {
-    transition: 0.25s;
-}
-
-#work .bonus:hover {
-    cursor: pointer;
-    transform: scale(1.15);
-}
-
-#work .project#pizza {
-    background: #FFF7EE;
-}
-
-#work .project#pocketdoc {
-    background: #FFF7EE;
-}
-
-/*#work .project#pizza:hover {
-    background: #FFF0E0;
-}
-*/
-#work .project#sentiment {
-    background: #FCFFEE;
-}
-
-/*#work .project#sentiment:hover {
-    background: #F8FFD9;
-}
-*/
-#work .project#money {
-    background: #EEFFF4;
-}
-
-/*#work .project#money:hover {
-    background: #E2FFEE;
-}*/
-
-#work .project#d3 {
-    background: #EEFDFF;
-}
-
-/*#work .project#d3:hover {
-    background: #E3FCFF;
-}*/
 
 #work .project span {
     display: inline-block;
@@ -171,10 +119,16 @@ body {
     width: 400px; /* 288px when above; 250px when below query */
     font-size: 36px;
     font-weight: bold;
+    color: #333333;
+    margin-top: 15px;
 }
 
 #work .project .subtitle {
-    margin-top: 15px;
+    color: #888888;
+    /*color: #4A90E2;*/
+    font-weight: 200;
+    font-size: 18px;
+
 }
 
 #work .project .description {
@@ -182,6 +136,9 @@ body {
     bottom: var(--padding);
     left: var(--padding);
     width: 400px; /* 288px when above; 250px when below query */
+    color: #888888;;
+    font-weight: 200;
+    font-size: 18px;
 }
 
 #work .project .icon { /* disappear when hit text */
@@ -201,35 +158,35 @@ body {
 }
 
 #work .project#pizza .icon#slice {
-    background: #FFE8CE;
+    background: #FFF7EE;
 }
 
 #work .project#pizza .icon#pocketdoc {
-    background: #FFE8CE;
+    background: #FFF7EE;
 }
 
 #work .project#sentiment .icon#smiley {
-    background: #F2FBCA;
+    background: #FCFFEE;
 }
 
 #work .project#sentiment .icon#bulb {
-    background: #F2FBCA;
+    background: #FCFFEE;
 }
 
 #work .project#money .icon#cash {
-    background: #CEFFDF;
+    background: #EEFFF4;
 }
 
 #work .project#money .icon#mountains {
-    background: #CEFFDF;
+    background: #EEFFF4;
 }
 
 #work .project#d3 .icon#graph {
-    background: #D0F9FF;
+    background: #EEFDFF;
 }
 
 #work .project#d3 .icon#rocket {
-    background: #D0F9FF;
+    background: #EEFDFF;
 }
 
 #work .project#pizza .icon#slice img {
@@ -297,13 +254,20 @@ body {
     width: 100%;
 }
 
+
+
 #footer {
-    margin-top: 100px;
-    text-align: right;
+    margin-top: 90px;
+}
+
+#footer .divider.long {
+    height: 1px;
+    width: 100%;
+    background-color: #E6E6E6;
+    margin-bottom: 30px;
 }
 
 #footer a {
-    color: rgb(85, 93, 109);
     text-decoration: none;
 }
 
@@ -311,24 +275,24 @@ body {
     cursor: pointer;
 }
 
-#footer span {
-    margin-left: 24px;
-    margin-right: 5px;
+#footer a {
+    margin-right: 15px;
+    margin-left: 5px;
 }
 
-#footer span#email {
-    margin: 0px 0px 0px 2px;
-    float: left;
+#footer .credit {
+    float: right;
+    font-weight: 200;
+    color: #888888;
+    font-size: 18px;
 }
 
-#footer span#credits {
-    display: block;
-    margin: 25px 0px 0px 2px;
+#footer .credit img {
+    margin: 0px 2px;
 }
 
 .case_study {
-    margin-top: 20px;
-    padding-top: 100px;
+    margin-top: 60px;
 }
 
 .case_study .hero {
@@ -454,21 +418,22 @@ body {
     margin: 60px 0px 0px 0px;
     font-size: 36px;
     font-weight: bold;
-    color: rgb(85, 93, 109);
+    color: #333333;
 }
 
 .case_study .subtitle {
 	display: inline-block;
 	margin-top: 10px;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 200;
 }
 
 .case_study .heading {
     display: inline-block;
     margin: 40px 0px 0px 0px;
     font-size: 24px;
-    font-weight: bold;
-    color: rgb(85, 93, 109);
+    font-weight: normal;
+    color: #333333;
 }
 
 .case_study .body {
@@ -483,7 +448,7 @@ body {
 .case_study .body img {
     width: 100%;
     /*cursor: zoom-in;*/
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
 .case_study .body img.shadow {
@@ -498,18 +463,29 @@ body {
 }
 
 .case_study .body a:link {
-    font-weight: bold;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
     color: rgb(85, 93, 109);
+    background-color: rgb(240, 240, 240);
 }
 
 .case_study .body a:visited {
-	font-weight: bold;
+	ont-weight: 400;
+    text-decoration: none;
+    font-style: italic;
     color: rgb(85, 93, 109);
+    background-color: rgb(240, 240, 240);
+}
+
+.case_study .body a:hover {
+    background-color: rgb(220, 220, 220);
 }
 
 .case_study span.body {
 	line-height: 27px;
     font-size: 18px;
+    font-weight: 200;
 }
 
 .case_study #rating_explanation {
@@ -539,16 +515,20 @@ body {
 #project_nav .previous {
     text-align: left;
     float: left;
+    font-weight: 200;
+    font-size: 18px;
 }
 
 #project_nav .next {
     text-align: right;
     float: right;
+    font-weight: 200;
+    font-size: 18px;
 }
 
 #project_nav .title {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 #project_nav a {
