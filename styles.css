@@ -71,11 +71,11 @@ body {
     color: #333333;
 }
 
-#hero .divider.short {
-    height: 1px;
+.divider.short {
+    height: 2px;
     width: 100px;
-    background-color: #E6E6E6;
-    margin: 30px 0px;
+    background-color: rgb(240, 240, 240);
+    margin: 15px 0px;
 }
 
 
@@ -103,7 +103,7 @@ body {
 
     transition: 0.25s;
 
-    border: 1px solid #EFEFEF;
+    border: 2px solid rgb(245, 245, 245);
 }
 
 #work .project:hover {
@@ -139,6 +139,7 @@ body {
     color: #888888;;
     font-weight: 200;
     font-size: 18px;
+    line-height: 27px;
 }
 
 #work .project .icon { /* disappear when hit text */
@@ -255,9 +256,9 @@ body {
 }
 
 #footer .divider.long {
-    height: 1px;
+    height: 2px;
     width: 100%;
-    background-color: #E6E6E6;
+    background-color: rgb(240, 240, 240);
     margin-bottom: 30px;
 }
 
