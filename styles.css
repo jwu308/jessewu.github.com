@@ -282,7 +282,8 @@ body {
 }
 
 #footer .credit img {
-    margin: 0px 2px;
+    margin-left: 2px;
+    margin-right: 3px;
 }
 
 .case_study {
@@ -424,7 +425,7 @@ body {
 
 .case_study .heading {
     display: inline-block;
-    margin: 40px 0px 0px 0px;
+    margin-top: calc(27px * 2);
     font-size: 24px;
     font-weight: normal;
     color: #333333;
@@ -432,7 +433,7 @@ body {
 
 .case_study .body {
     display: block;
-    margin-top: 30px;
+    margin-top: calc(27px / 2);
 }
 
 .case_study ul {
@@ -443,6 +444,10 @@ body {
     width: 100%;
     /*cursor: zoom-in;*/
     margin: 20px 0px;
+}
+
+.case_study .body img.design-process {
+    margin-bottom: 0px;
 }
 
 .case_study .body img.shadow {
