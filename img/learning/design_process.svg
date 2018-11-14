@@ -54,9 +54,8 @@
                 <text id="Task-Flow-Wireframes" font-family="Roboto-Light, Roboto" font-size="14" font-weight="300" line-spacing="18" fill="#000000">
                     <tspan x="0" y="43">Task Flow</tspan>
                     <tspan x="0" y="61">Wireframes</tspan>
-                    <tspan x="0" y="79">Wireframe Flow</tspan>
-                    <tspan x="0" y="97">Mockups</tspan>
-                    <tspan x="0" y="115"></tspan>
+                    <tspan x="0" y="79">Mockups</tspan>
+                    <tspan x="0" y="97">Prototype</tspan>
                 </text>
             </g>
             <g id="edit" fill="#000000" fill-rule="nonzero">
