@@ -30,13 +30,13 @@
                 <span class="subtitle">Helping MongoDB University students keep track of their course progress.</span>
                 <br>
                 <span class='heading'>Problem</span>
-                <span class='body'>For each course in MongoDB University, there are syllabus and progress pages. The syllabus page shows a list of the chapter sections that make up the course, and the progress page shows students their current grades in the course.
+                <span class='body'>Each course in MongoDB University has a syllabus and progress page. The syllabus page shows a list of the chapter sections that make up the course, and the progress page shows students their current grades in the course.
                 <br><br>
                     <img class='shadow' src='../img/learning/existing_syllabus.jpeg' />
                 <br>
                     <img class='shadow' src='../img/learning/existing_progress.jpeg' />
                 <br><br>
-                However, the MongoDB University team had been receiving questions and complaints regarding  these pages from users in the community. For example, many users often submitted reports regarding their confusion about:
+               The MongoDB University team had been receiving questions and complaints regarding  these pages from users in the community. For example, many users often submitted reports regarding their confusion about:
                 <br><br>
                 <ul>
                     <li>Grading policy</li>
@@ -44,7 +44,7 @@
                     <li>Homework deadlines</li>
                     <li>Countless other issues</li>
                 </ul>
-                <br>I was asked to investigate these usability issues with the syllabus and progress pages and design newly redesigned experiences to address the users' problems.
+                <br>I was asked to investigate these usability issues with the syllabus and progress pages and create newly redesigned experiences to address the users' problems and increase user engagement during courses.
                 </span>
                 <span class='heading'>Logistics</span>
                 <span class='body'>
@@ -80,13 +80,14 @@
                 After the user research was conducted and the results were synthesized, the main research insights were:
                 <br><br>
                 <ul>
+                    <li>Users have missed assignment deadlines or misinterpret grades, causing some users to fall behind and drop out of a course</li>
                     <li>In the beginning of a course, users would like to understand an overview of the course material as well as the time commitment needed to complete the course</li>
                     <li>During the middle of a course, users would like to easily access homework assignments, understand their progress in terms of lessons left to complete, and know their current grades</li>
                     <li>At the end of a course, users would like to understand their performance and access further resources to address areas of weakness and related areas of study</li>
                 </ul>
                 </span>
                 <span class='heading'>Ideation and Early Design</span>
-                <span class='body'>Based on the user research insights, several primary user tasks were determined:
+                <span class='body'>Based on the users' needs from the research insights, several primary user tasks were determined:
                 <br><br>
                 <ul>
                     <li>Browse an overview of the course's material and chapter structure</li>
@@ -96,7 +97,7 @@
                     <li>Refer to additional resources to improve areas of weakness or learn more about the course</li>
                 </ul>
                 <br>
-                To design an experience that enabled users to complete the multitude of user tasks, the tasks were organized into three task categories:
+                To begin designing an experience that enables users to complete a multitude of user tasks, the tasks were organized into three task categories:
                 <br><br>
                 <ul>
                     <li>Chapter organization</li> 
@@ -106,6 +107,11 @@
                 <br>
                 Next, UI designs were ideated via sketching for each of the categories resulting in several components and component layouts. 
                 <br><br>
+                <div class="img_row">
+                    <img src="../img/learning/ideation2.jpg" />
+                    <img src="../img/learning/ideation1.jpg" />
+                </div>
+                <br>
                 To determine which UI designs to move forward with, several factors were considered: 
                 <br><br>
                 <ul>
@@ -113,36 +119,32 @@
                     <li>How well do the designs synergize with the designs of the other task categories?</li>
                 </ul>
                 <br>
-                <div class="img_row">
-                    <img src="../img/learning/ideation2.jpg" />
-                    <img src="../img/learning/ideation1.jpg" />
-                </div>
-                <br>
-                Based on the design factors mentioned above, the individual UI designs for each task category were weaved together into a coherent wireframe sketch. 
+                Based on the design factors mentioned above, the individual UI designs for each task category were selected and weaved together into a coherent wireframe sketch. 
                 <br><br>
                     <img src='../img/learning/wireframe.jpeg' />
                 <br><br>
-                The top section shows a description of the course as well an overview of the students' progress and grades.
+                The top section shows a description of the course and an overview of the students' progress and grades.
                 <br><br>
-                The user can also see a breakdown of the chapters they're currently working as well as the ones they finished and yet to finish. The ones they are working on are placed towards the top so that users can see them first.
+                The user can also see a breakdown of the chapters they're currently working as well as the ones they finished and yet to finish. Chapters in progress are placed towards the top so that users can see them first.
                 <br><br>
-                The syllabus and progress pages were also combined into a single page. The rationale behind this design decision was that many of the requested user tasks were similar to one another and could thus accomplished in a unified, hybrid design layout with included elements from both former pages.
+                The syllabus and progress pages were also combined into a single page. The rationale behind this design decision was that many of the requested user tasks were similar to one another and could thus accomplished in a unified, hybrid design layout with hybrid elements from both former pages.
                 </span>
                 <span class='heading'>Peer Review and Design Critique</span>
-                <span class='body'>After creating initial wireframes for the design, a peer review and design critique were conducted with internal team members to gather input on the wireframe designs. 
+                <span class='body'>After the wireframes were created, a peer review and design critique were conducted with internal team members to gather input on the initial designs. 
                 <br><br>
-                For each these evaluation methods, the user tasks were introduced, and explanations were given regarding how the user tasks could be completed through the wireframe design.
+                To present the wireframes to my peers, the user tasks were first introduced, and then explanations were given regarding how the user tasks could be completed in the wireframe design.
                 <br><br>
                 The main pieces of feedback were:
                 <br><br>
                 <ul>
-                    <li>Given engineering constraint of an additive grading system, in which grades start at 0% and increase towards 100%, seemed discouraging</li>
-                    <li>Percentage grades for each chapter does not show weighted grade values; i.e., a chapter with more homework should be weighted more heavily</li>
-                    <li>Expanded chapter content would be too extensive in most realistic cases and would thus make the dropdown interfaces very long</li>
+                    <li>The additive grading system seemed discouraging- grades start at 0% and increase towards 100% after completing assignments</li>
+                    <li>The grading distribution between homework grades and exam grades isn't clear</li>
+                    <li>Chapter weighting should be shown more accurately- percentage grades for each chapter do not show weighted grade values; e.g. chapters with more homeworks should be weighted more heavily</li>
+                    <li>Expanded chapter content would be too extensive in most realistic circumstances and would thus make the dropdown interfaces very long</li>
                 </ul>
                 </span>
                 <span class='heading'>Updated Design</span>
-                <span class='body'>Based on the feedback from the internal evaluation sessions, several changes were made to the wireframe design.
+                <span class='body'>Based on the feedback from the internal evaluation sessions, several changes were made to the design.
                 <br><br>
                 <!-- The wireframes were promptly moved forwards towards high-fidelity design using the MongoDB University design system due to project timeline constraints. 
                 <br><br> -->
@@ -150,7 +152,7 @@
                 <br><br>
                 <ul>
                     <li>Replaced the overall grade percentage with a data visualization that showed grading category breakdowns, which was homework as 50% and the exam as 50%</li>
-                    <li>Replaced the chapter grade percentages with correct and incorrect badges to show the graded weight; i.e.. more badges for a chapter means more impact on the overall grade</li>
+                    <li>Replaced the chapter grade percentages with correct and incorrect badges to show the graded weight; i.e. more badges for a chapter means greater impact on the overall grade</li>
                     <li>Removed the accordion dropdown and changed the interaction of clicking on a chapter to navigating to the course page itself, which already shows an outline of the chapter</li>
                 </ul>
                 <br>
@@ -161,7 +163,7 @@
                 </span>
                 <span class='heading'>User Testing</span>
                 <span class='body'>
-                After the prototype was created, user testing was conducted to:
+                After creating the prototype based on the updated designs, user testing was conducted with external users. The main goals of the user testing were to:
                 <br><br>
                 <ul>
                     <li>Determine whether users would be able to complete the user tasks</li>
@@ -184,11 +186,11 @@
                 A total of 11 user tests were conducted on external users, who consisted of both database administrators and developers. The results were analyzed, and the main user testing insights were:
                 <br><br>
                 <ul>
-                    <li>Users could tell what the course was about, but would still like a brief written description of the course instead of having to look at the chapter titles</li>
-                    <li>Users had trouble determining how long the course would last for</li>
-                    <li>About half of the users understood the overall grade visualization, while half of the users did not</li>
-                    <li>Users liked the badge visualization for graded lessons because they clearly display the outcome of a lesson as well as more contextual information upon hovering</li>
-                    <li>Users wanted to see a recommendation of next steps to take after completing a course, such as taking another related course or reading documentation related to the course</li>
+                    <li>Users could tell what the course was about, but would still like a brief written description of the course instead of having to inspect the chapter titles</li>
+                    <li>Users had trouble determining how the course's total duration</li>
+                    <li>Only about half of the users understood the overall grade visualization</li>
+                    <li>Users liked the badge visualization for graded lessons because they could see the number of graded lessons and the current grade of each lesson</li>
+                    <li>Users expected to receive about a recommendation of next steps after completing a course, such as taking another related course or reading related documentation</li>
                 </ul>
                 </span>
                 <span class='heading'>Updated Design</span>
@@ -196,11 +198,11 @@
                 Based on the user testing results, several design iterations were made: 
                 <br><br>
                 <ul>
-                    <li>Added a course description to the top overview section so that users can read a brief summary of the course's content</li>
-                    <li>Added course duration information to the overview section so users can determine the time commitment for the course without having to read through each chapter's dates</li>
-                    <li>Replaced semi-circle grade visualization with a bar chart, which features clear titles for each bar which represents grading categories, such as homework or exam</li>
+                    <li>Added a course description to the top overview section so that users can read a brief summary of the course</li>
+                    <li>Added the course duration to the overview section before a course has begun, so users can determine a course's time commitment without having to browse each chapter's dates and calculate the total duration</li>
+                    <li>Replaced the semi-circle grade visualization with a bar chart, which features clear titles for the grading categories- homeworks and the exam</li>
                     <li>Unified the tooltip styles under a commonly used tooltip style from the MongoDB design system</li>
-                    <li>Added recommendations for similar courses and related readings for after users have completed the course</li>
+                    <li>Added recommendations for similar courses and related readings for users who have completed the course</li>
                 </ul>
                 <br>
                     <img class='shadow' src='../img/learning/mockup_bars_middle.png' />
@@ -210,11 +212,11 @@
                 </span>
                 <span class='heading'>Next Steps</span>
                 <span class='body'>
-                The updated designs were well-received by the MongoDB University and the MongoDB design team.
+                The updated designs were well-received by the MongoDB University and Design teams.
                 <br><br>
-                However, the designs are currently undergoing further final user testing. The implementation of the final design deliverables are tentatively scheduled to be finished by Q1 2019. 
+                However, the designs are currently undergoing further user testing. The implementation of the final design deliverables are tentatively scheduled to be completed by Q1 2019. 
                 <br><br>
-                Meanwhile, <a href="https://mongodb.invisionapp.com/share/7ENG88FBCZP" target="_blank">the latest Invision prototype of the updated design can be found here.</a>
+                In the meantime, <a href="https://mongodb.invisionapp.com/share/7ENG88FBCZP" target="_blank">the latest Invision prototype of the updated design can be found here.</a>
                 </span>
             </div>
 
