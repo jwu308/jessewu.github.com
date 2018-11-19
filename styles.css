@@ -154,14 +154,14 @@ body {
     text-align: center;
     border: 1px solid #4A90E2;
     border-radius:30px;
-    width: 114px;
-    height: 46px;
+    width: 100px;
+    height: 44px;
     transition: all 0.25s;
 }
 
 #work .project .explore span {
     display:inline-block;
-    margin-top: 15px;
+    margin-top: 14px;
 }
 
 #work .project .explore img{
