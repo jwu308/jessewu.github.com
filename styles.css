@@ -39,18 +39,6 @@ body {
     color: rgb(85, 93, 109);
 }
 
-#header span {
-    margin-left: 24px;
-    margin-right: 10px;
-}
-
-#header span#logo {
-    margin: -12px 0px 10px 10px;
-    font-family: 'Lobster', cursive;
-    font-size: 36px;
-    float: left;
-}
-
 #hero {
     margin-top: 180px;
 }
@@ -111,6 +99,12 @@ body {
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
+#work .project:hover .explore {
+    background: #4A90E2;
+    color: white;
+    font-weight: normal;
+}
+
 #work .project span {
     display: inline-block;
 }
@@ -131,15 +125,48 @@ body {
 
 }
 
-#work .project .description {
+/*#work .project .description {
     position: absolute;
     bottom: var(--padding);
     left: var(--padding);
-    width: 400px; /* 288px when above; 250px when below query */
+    width: 400px;  288px when above; 250px when below query 
     color: #888888;;
     font-weight: 200;
     font-size: 18px;
     line-height: 27px;
+}*/
+
+#work .project .description {
+    width: 400px; /* 288px when above; 250px when below query */
+    color: #888888;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#work .project .explore {
+    position: absolute;
+    bottom: var(--padding);
+    left: var(--padding);
+    color: #4A90E2;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #4A90E2;
+    border-radius:30px;
+    width: 114px;
+    height: 46px;
+    transition: all 0.25s;
+}
+
+#work .project .explore span {
+    display:inline-block;
+    margin-top: 15px;
+}
+
+#work .project .explore img{
+    margin-left: 7.5px;
+    margin-bottom: -2px;
 }
 
 #work .project .icon { /* disappear when hit text */
