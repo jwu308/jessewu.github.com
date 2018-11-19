@@ -808,6 +808,14 @@ animation durations:
 }
 
 @media screen and (max-width: 530px) {
+	#work .project .divider.short {
+		display: none;
+	}
+
+	#work .project .explore {
+		display: none;
+	}
+
     #header span {
         margin-left: 4px;
     }
