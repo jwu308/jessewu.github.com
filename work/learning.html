@@ -163,7 +163,7 @@
                 </span>
                 <span class='heading'>User Testing</span>
                 <span class='body'>
-                After creating the prototype based on the updated designs, user testing was conducted with external users. The main goals of the user testing were to:
+                After creating the prototype based on the updated designs, user testing was conducted with 11 external users, who consisted of both database administrators and developers.  The main goals of the user testing were to:
                 <br><br>
                 <ul>
                     <li>Determine whether users would be able to complete the user tasks</li>
@@ -178,12 +178,11 @@
                 </ul>
                 <br>
                 Users were given a scenario as context and then asked to perform tasks in the prototype based on the scenario.
-                <br><br>
                 An example of a task scenario was having the user imagine that they have a busy schedule and then asking them to try to determine the amount of coursework they need to finish by a certain deadline.
                 <br><br>
                 After each of these tasks, users were asked follow-up questions about their decision making.
                 <br><br>
-                A total of 11 user tests were conducted on external users, who consisted of both database administrators and developers. The results were analyzed, and the main user testing insights were:
+                The results were analyzed, and the main user testing insights were:
                 <br><br>
                 <ul>
                     <li>Users could tell what the course was about, but would still like a brief written description of the course instead of having to inspect the chapter titles</li>
@@ -214,7 +213,7 @@
                 <span class='body'>
                 The updated designs were well-received by the MongoDB University and Design teams.
                 <br><br>
-                However, the designs are currently undergoing further user testing. The implementation of the final design deliverables are tentatively scheduled to be completed by Q1 2019. 
+                However, the designs are currently undergoing further user testing. The implementation of the final design deliverables are tentatively scheduled to be completed in 2019.
                 <br><br>
                 In the meantime, <a href="https://mongodb.invisionapp.com/share/7ENG88FBCZP" target="_blank">the latest Invision prototype of the updated design can be found here.</a>
                 </span>
@@ -265,11 +264,6 @@
             var next = el.nextSibling;
             par.removeChild(el);
             setTimeout(function() {par.insertBefore(el, next);}, 0)
-        }
-
-        function explain_rating()
-        {
-            document.getElementById("rating_explanation").innerHTML = "The sentiment rating system ranged from -1 to 1, where a rating of -1 represents the most negative sentiment, 0 represents neutral sentiment, and 1 represents the most positive sentiment. This scale was chosen over a tradition 0 to 10 or 0 to 100 scale due to its ability to convey sentiment scores more intuitively. <br><br> In a 0 to 100 scale, high scores are typically interpreted as good and low scores (typically perceived as below 70) as bad. Under this system, a score of 50 or 50% implies a poor score. However, for sentiment rating, 50 would actually mean that the score was perfectly neutral; people have no strong feelings in either direction. As a result, the -1 to 1 range was chosen to minimize misconceptions and support the idea that 0 represents an origin point that aligns with neutral sentiment.";
         }
 
         function disappear(id)
