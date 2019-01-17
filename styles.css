@@ -517,6 +517,10 @@ body {
     background-color: rgb(220, 220, 220);
 }
 
+.case_study .body a img {
+    background-color: none;
+}
+
 .case_study span.body {
 	line-height: 27px;
     font-size: 18px;
