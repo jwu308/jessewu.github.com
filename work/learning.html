@@ -36,15 +36,14 @@
                 <br>
                     <img class='shadow' src='../img/learning/existing_progress.jpeg' />
                 <br><br>
-               The MongoDB University team had been receiving questions and complaints regarding  these pages from users in the community. For example, many users often submitted reports regarding their confusion about:
+               However, the MongoDB University team had been receiving complaints from users- which should have been addressed by these pages. Examples of commonly submitted feedback included:
                 <br><br>
                 <ul>
-                    <li>Grading policy</li>
-                    <li>Current progress in the course</li>
-                    <li>Homework deadlines</li>
-                    <li>Countless other issues</li>
+                    <li><span class="header">"I want to do well in the course, but I don't know how the grades work."</span></li>
+                    <li><span class="header">"I can't keep up with the course. There's so many assignments going on."</span></li>
+                    <li><span class="header">"I'm not even sure I understand what the course is covering."</span></li>
                 </ul>
-                <br>I was asked to investigate these usability issues with the syllabus and progress pages and create newly redesigned experiences to address the users' problems and increase user engagement during courses.
+                <br>I was asked to investigate these issues and redesign a syllabus and progress page. The goal was to address the users' problems, decrease the number of user complaints, and ultimately increase user engagement and retainment.
                 </span>
                 <span class='heading'>Logistics</span>
                 <span class='body'>
@@ -69,56 +68,47 @@
                 <br>
                 For the interviews, 11 users were asked a variety of open-ended questions about the context in which they complete MongoDB courses, their goals when taking courses, and issues with interacting with the syllabus and progress pages. These users primarily consisted of data administrators and developers.
                 <br><br>
-                For the card sorting activity, key pieces of information about courses, such as chapter titles, chapter start dates, and homework grades, were written on cards. The same 11 users were asked to organize these cards in order of important to them through three phases of taking a course: 
+                For the card sorting activity, key pieces of information about courses, such as chapter titles, chapter start dates, and homework grades, were written on cards. They were then asked to organize these cards in order of importance to them.
                 <br><br>
-                <ul>
-                    <li>Browsing a course initially</li>
-                    <li>Completing course work during the course</li>
-                    <li>Evaluating results after the course has finished</li>
-                </ul>
-                <br>
                 After the user research was conducted and the results were synthesized, the main research insights were:
                 <br><br>
                 <ul>
-                    <li>Users have missed assignment deadlines or misinterpret grades, causing some users to fall behind and drop out of a course</li>
-                    <li>In the beginning of a course, users would like to understand an overview of the course material as well as the time commitment needed to complete the course</li>
-                    <li>During the middle of a course, users would like to easily access homework assignments, understand their progress in terms of lessons left to complete, and know their current grades</li>
-                    <li>At the end of a course, users would like to understand their performance and access further resources to address areas of weakness and related areas of study</li>
+                    <li><span class="header">Users don't understand how grading works because the existing graphs are unclear.</span></li>
+                    <li><span class="header">Users can't keep up with courses because they feel overwhelmed by the quantity of assignments.</span></li>
+                    <li><span class="header">Users don't know what courses are about because the existing descriptions are scarce and contain jargon.</span></li>
                 </ul>
                 </span>
                 <span class='heading'>Ideation and Early Design</span>
-                <span class='body'>Based on the users' needs from the research insights, several primary user tasks were determined:
+                <span class='body'>Based on the research insights, I set out design guidelines for the redesigned syllabus and progress pages:
                 <br><br>
                 <ul>
-                    <li>Browse an overview of the course's material and chapter structure</li>
-                    <li>Access homework assignments</li>
-                    <li>Keep track the amount of completed work and incomplete work</li>
-                    <li>Understand their grades</li>
-                    <li>Refer to additional resources to improve areas of weakness or learn more about the course</li>
+                    <li>Users should be understand their grades and progress.</li>
+                    <li>Users should be able to tell which assignments are due first and easily access them.</li>
+                    <li>Users should have an idea of the content that's being covered in the course.</li>
                 </ul>
                 <br>
-                To begin designing an experience that enables users to complete a multitude of user tasks, the tasks were organized into multiple categories. UI designs were then ideated via sketching for each of the categories resulting in several components and component layouts:
+                I then started sketching out different variations of the UI on paper.
                 <br><br>
                 <ul>
                     <li>Overall Layout</li>
                     <img src='../img/learning/ideation_layout.jpg' />
+                    I decided to go with A so that users can see both the overview and detailed breakdown on the same page. I also felt that horizontal orientation of the overview section would scale content well.
+                    <br><br>
                     <li>Chapter Organization</li>
                     <img src='../img/learning/ideation_chapters.jpg' />
+                    I decided to go with B so that users could easily tell which chapters are currently available, upcoming, and past at a glance.
+                    <br><br>
                     <li>Course Progress</li>
                     <img src='../img/learning/ideation_progress.jpg' />
+                    I decided to go with B because it felt the most compact and also had room in the middle to show a simple, large progress percentage.
+                    <br><br>
                     <li>Grades</li>
                     <img src='../img/learning/ideation_grades.jpg' />
+                    I went with a simplified version of A with only showing an overall grade to avoid complexity and keep things simple.
                 </ul>
 
                 <br>
-                To determine which UI designs to move forward with, several factors were considered: 
-                <br><br>
-                <ul>
-                    <li>How well do the UI designs address the user tasks?</li> 
-                    <li>How well do the designs synergize with the designs of the other task categories?</li>
-                </ul>
-                <br>
-                Based on the design factors mentioned above, the individual UI designs were selected and weaved together into a coherent wireframe sketch. 
+                After some further ideation and trade-off analysis, I finally wove my designs together into a coherent wireframe:
                 <br><br>
                     <img src='../img/learning/wireframe.jpeg' />
                 <br><br>
