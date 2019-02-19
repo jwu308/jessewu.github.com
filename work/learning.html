@@ -31,19 +31,19 @@
                 <br>
                 <span class='heading'>Problem</span>
                 <span class='body'>Each course in MongoDB University has a syllabus and progress page. The syllabus page shows a list of the chapter sections that make up the course, and the progress page shows students their current grades in the course.
-                <br><br>
+                <br><br>``
                     <img class='shadow' src='../img/learning/existing_syllabus.jpeg' />
                 <br>
                     <img class='shadow' src='../img/learning/existing_progress.jpeg' />
                 <br><br>
-               However, the MongoDB University team had been receiving complaints from users- which should have been addressed by these pages. Examples of commonly submitted feedback included:
+               However, the MongoDB University team had been receiving numerous complaints from users' feedback-  which should have been addressed by these pages. Examples of common feedback included:
                 <br><br>
                 <ul>
                     <li><span class="header">"I want to do well in the course, but I don't know how the grades work."</span></li>
                     <li><span class="header">"I can't keep up with the course. There's so many assignments going on."</span></li>
                     <li><span class="header">"I'm not even sure I understand what the course is covering."</span></li>
                 </ul>
-                <br>I was asked to investigate these issues and redesign a syllabus and progress page. The goal was to address the users' problems, decrease the number of user complaints, and ultimately increase user engagement and retainment.
+                <br>My product manager and I came up with a design-driven plan to investigate these issues and redesign a syllabus and progress page. The overall goal was to address the users' problems, decrease the number of user complaints, and ultimately increase user engagement and retainment for business.
                 </span>
                 <span class='heading'>Logistics</span>
                 <span class='body'>
@@ -59,7 +59,7 @@
                     <img class='design-process' src='../img/learning/design_process.svg' />
                 </span>
                 <span class='heading'>Research</span>
-                <span class='body'>To learn more about how users currently interact with the syllabus and progress pages and empathize with their paint points, needs, and goals when taking a MongoDB University course, two research methods were conducted: 
+                <span class='body'>To learn more about how users currently interact with the syllabus and progress pages and empathize with their paint points, needs, and goals when taking a MongoDB University course, I conducted two research methods at MongoDB World 2018:
                 <br><br>
                 <ul>
                     <li>Interviews</li>
@@ -74,7 +74,7 @@
                 <br><br>
                 <ul>
                     <li><span class="header">Users don't understand how grading works because the existing graphs are unclear.</span></li>
-                    <li><span class="header">Users can't keep up with courses because they feel overwhelmed by the quantity of assignments.</span></li>
+                    <li><span class="header">Users can't keep up with courses because the assignment listings feel unorganized.</span></li>
                     <li><span class="header">Users don't know what courses are about because the existing descriptions are scarce and contain jargon.</span></li>
                 </ul>
                 </span>
@@ -87,16 +87,16 @@
                     <li>Users should have an idea of the content that's being covered in the course.</li>
                 </ul>
                 <br>
-                I then started sketching out different variations of the UI on paper.
+                I then started sketching out different variations of the UI on paper that would address the research-based design guidelines. To decide which designs to choose, I considered usability, efficiency, and feasability through consulting with engineers on my team.
                 <br><br>
                 <ul>
                     <li>Overall Layout</li>
                     <img src='../img/learning/ideation_layout.jpg' />
-                    I decided to go with A so that users can see both the overview and detailed breakdown on the same page. I also felt that horizontal orientation of the overview section would scale content well.
+                    I decided to go with A so that users have the option to quickly see an overview or dive into the details of the course. I also felt that horizontal orientation of the overview section would scale content well.
                     <br><br>
-                    <li>Chapter Organization</li>
+                    <li>Chapter Breakdown</li>
                     <img src='../img/learning/ideation_chapters.jpg' />
-                    I decided to go with B so that users could easily tell which chapters are currently available, upcoming, and past at a glance.
+                    I decided to go with B so that users would first see the chapters that are currently available and thus require immediate attention, followed by upcoming and past chapters - all through a single page at a glance.
                     <br><br>
                     <li>Course Progress</li>
                     <img src='../img/learning/ideation_progress.jpg' />
@@ -104,59 +104,64 @@
                     <br><br>
                     <li>Grades</li>
                     <img src='../img/learning/ideation_grades.jpg' />
-                    I went with a simplified version of A with only showing an overall grade to avoid complexity and keep things simple.
+                    I went with a simplified version of A with only showing an overall grade to avoid complexity and keep things simple. There would be an option to flip over the visualization and reveal a detailed breakdown.
                 </ul>
 
                 <br>
                 After some further ideation and trade-off analysis, I finally wove my designs together into a coherent wireframe:
                 <br><br>
-                    <img src='../img/learning/wireframe.jpeg' />
+                    <img src='../img/learning/wireframe.jpg' />
                 <br><br>
-                The syllabus and progress pages were combined into a single page. The rationale behind this design decision was that many of the requested user tasks were similar to one another and could thus accomplished in a unified, hybrid design layout with hybrid elements from both former pages.
+                Firstly, the syllabus and progress pages were combined into a single page. The rationale behind this design decision was that many of the requested user tasks were similar to one another and could thus accomplished in a unified, hybrid design layout with hybrid elements from both former pages.
                 <br><br>
-                The top section shows a description of the course and an overview of the students' progress and grades, so students can instantly see an high-level picture of how they're doing in the course.
+                The top section shows a description of the course and an overview of the students' progress and grades, so students can instantly see a high-level picture of how they're doing in the course.
                 <br><br>
                 The user can also see a breakdown of the chapters they're currently working as well as the ones they finished and yet to finish. Chapters in progress are placed towards the top so that users can see them first.
                 <br><br>
                 Progress was chosen to be represented using "x of y" and grades using "x%" to help differentiate them from  one another. Moreover, the progress' fractions were meant to emphasize current completion, while the grades' percentages were meant to reflect traditinonal grading systems.
                 </span>
                 <span class='heading'>Peer Review and Design Critique</span>
-                <span class='body'>After the wireframes were created, a peer review and design critique were conducted with internal team members to gather input on the initial designs. 
+                <span class='body'>After the wireframes were created, a peer review with my engineering team and design critique with my design team were conducted to gather input on the initial designs. 
                 <br><br>
-                To present the wireframes to my peers, the user tasks were first introduced, and then explanations were given regarding how the user tasks could be completed in the wireframe design.
+                To present the wireframes to my peers, the user tasks were first introduced, and then explanations were given regarding how the user tasks could be completed in the wireframe design. 
                 <br><br>
                 The main pieces of feedback were:
                 <br><br>
                 <ul>
                     <li>The additive grading system seemed discouraging- grades start at 0% and increase towards 100% after completing assignments</li>
-                    <li>The grading distribution between homework grades and exam grades isn't clear</li>
+                    <li>The overall grade system isn't transparent- the 50:50 distribution between homework and exams could be more clear</li>
+                    <img src='../img/learning/critique_grades.jpg' />
                     <li>Chapter weighting should be shown more accurately- percentage grades for each chapter do not show weighted grade values; e.g. chapters with more homeworks should be weighted more heavily</li>
+                    <img src='../img/learning/critique_weight.jpg' />
                     <li>Expanded chapter content would be too extensive in most realistic circumstances and would thus make the dropdown interfaces very long</li>
+                    <img src='../img/learning/critique_dropdown.jpg' />
                 </ul>
                 </span>
                 <span class='heading'>Updated Design</span>
-                <span class='body'>Based on the feedback from the internal evaluation sessions, several changes were made to the design.
+                <span class='body'>Based on the feedback from the internal evaluation sessions, several changes were made to the design. To stay on track to meet deadlines, I created the updated design in high-fidelity using <a href='http://mongodb.design/' target='_blank'>MongoDB's design system</a>.
                 <br><br>
                 <!-- The wireframes were promptly moved forwards towards high-fidelity design using the MongoDB University design system due to project timeline constraints. 
                 <br><br> -->
-                The updated design changes that were implemented were:
+                The updated design changes that were implemented include:
                 <br><br>
                 <ul>
                     <li>Replaced the overall grade percentage with a data visualization that showed grading category breakdowns, which was homework as 50% and the exam as 50%</li>
+                    <img src='../img/learning/updated1_grades.png' />
                     <li>Replaced the chapter grade percentages with correct and incorrect badges to show the graded weight; i.e. more badges for a chapter means greater impact on the overall grade</li>
+                    <img src='../img/learning/updated1_weight.png' />
                     <li>Removed the accordion dropdown and changed the interaction of clicking on a chapter to navigating to the course page itself, which already shows an outline of the chapter</li>
                 </ul>
                 <br>
                 Next, the mockups were connected together to create <a target="_blank" href="https://mongodb.invisionapp.com/share/5AN4DGQNFKS#/screens">an Invision prototype, which can be accessed here.</a>
                 <br><br>
                     <a target="_blank" href="https://mongodb.invisionapp.com/share/5AN4DGQNFKS#/screens">
-                        <img class='shadow' src='../img/learning/mockup_circle.jpeg' />
+                        <img class='shadow' src='../img/learning/mockup_circle.png' />
                     </a>
                 <br>
                 </span>
                 <span class='heading'>User Testing</span>
                 <span class='body'>
-                After creating the prototype based on the updated designs, user testing was conducted with 11 external users, who consisted of both database administrators and developers.  The main goals of the user testing were to:
+                After creating the prototype based on the updated designs, user testing was conducted over Zoom video meetings with 11 external users, who consisted of both database administrators and developers.  The main goals of the user testing were to:
                 <br><br>
                 <ul>
                     <li>Determine whether users would be able to complete the user tasks</li>
@@ -190,12 +195,16 @@
                 Based on the user testing results, several design iterations were made: 
                 <br><br>
                 <ul>
+                    <li>Replaced the semi-circle grade visualization with a bar chart, which features clear titles for the grading categories- homeworks and the exam</li>
+                        <img src='../img/learning/updated2_grades.png' />
+                    <li>Added recommendations for similar courses and related readings for users who have completed the course</li>
+                        <img src='../img/learning/updated2_next.png' />
                     <li>Added a course description to the top overview section so that users can read a brief summary of the course</li>
                     <li>Added the course duration to the overview section before a course has begun, so users can determine a course's time commitment without having to browse each chapter's dates and calculate the total duration</li>
-                    <li>Replaced the semi-circle grade visualization with a bar chart, which features clear titles for the grading categories- homeworks and the exam</li>
                     <li>Unified the tooltip styles under a commonly used tooltip style from the MongoDB design system</li>
-                    <li>Added recommendations for similar courses and related readings for users who have completed the course</li>
                 </ul>
+                <br>
+                The updated designs were then connected together to create <a href="https://mongodb.invisionapp.com/share/7ENG88FBCZP" target="_blank">the latest Invision prototype</a> for future user testing sessions.
                 <br>
                     <a href="https://mongodb.invisionapp.com/share/7ENG88FBCZP" target="_blank">
                         <img class='shadow' src='../img/learning/mockup_bars_middle.png' />
@@ -206,11 +215,13 @@
                     </a>
                 <br>
                 </span>
-                <span class='heading'>Next Steps</span>
+                <span class='heading'>Impact and Next Steps</span>
                 <span class='body'>
-                The updated designs were well-received by the MongoDB University and Design teams.
+                At this point in the project, it was early August, and my internship was coming to an end. Fortunately, my team and I made significant progress over the previous 5 weeks. 
                 <br><br>
-                However, the designs are currently undergoing further user testing. The implementation of the final design deliverables are tentatively scheduled to be completed in 2019.
+                We were able to identify our users' problems and iteratively design solutions for them. The qualitative and quantitative results from users validated our progress, and we felt confident moving forward that the new designs would improve users' experience and ultimately increase user engagement.
+                <br><br>
+                Regarding next steps, the designs are currently undergoing final user testing and design iterations. The implementation of the final design deliverables are scheduled to be completed by Q3 2019.
                 <br><br>
                 In the meantime, <a href="https://mongodb.invisionapp.com/share/7ENG88FBCZP" target="_blank">the latest Invision prototype of the updated design can be found here.</a>
                 </span>
