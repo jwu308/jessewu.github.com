@@ -4,7 +4,6 @@ body {
     font-size: 20px;
     color: rgb(85, 93, 109);
     font-family: 'Roboto', sans-serif;
-    /*background-image: url("img/portfolio_background_top.svg");*/
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -133,17 +132,6 @@ body {
     font-size: 18px;
 
 }
-
-/*#work .project .description {
-    position: absolute;
-    bottom: var(--padding);
-    left: var(--padding);
-    width: 400px;  288px when above; 250px when below query 
-    color: #888888;;
-    font-weight: 200;
-    font-size: 18px;
-    line-height: 27px;
-}*/
 
 #work .project .description {
     width: 400px; /* 288px when above; 250px when below query */
@@ -517,8 +505,16 @@ body {
     background-color: rgb(220, 220, 220);
 }
 
-.case_study .body a img {
-    background-color: none;
+.case_study .body a.image:link {
+	background: none;
+}
+
+.case_study .body a.image:visited {
+    background: none;
+}
+
+.case_study .body a.image:hover {
+    background: none;
 }
 
 .case_study span.body {
